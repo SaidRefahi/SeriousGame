@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: 
   DisplayName: 
-  Description: 
+  Description: 4
   Icon: {fileID: 0}
