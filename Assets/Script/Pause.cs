@@ -1,9 +1,11 @@
-// Archivo: Pause.cs
+// Archivo: Pause.cs (ACTUALIZADO para Nuevo Input System)
 using UnityEngine;
-using UnityEngine.SceneManagement; // Para volver al menú
+using UnityEngine.SceneManagement;
+// ¡Ya no se necesita 'using UnityEngine.InputSystem;' para este método!
 
 /// <summary>
-/// Gestiona el menú de pausa, el tiempo del juego y la vuelta al menú.
+/// Gestiona el menú de pausa.
+/// Este script recibe mensajes del componente 'PlayerInput'.
 /// </summary>
 public class Pause : MonoBehaviour
 {
@@ -12,21 +14,26 @@ public class Pause : MonoBehaviour
 
     private bool isPaused = false;
 
-    // Se recomienda llamar a la pausa con el nuevo Input System,
-    // pero para KISS, usaremos Update() con el input antiguo.
-    void Update()
+    // --- ¡EL MÉTODO UPDATE() SE HA ELIMINADO! ---
+    // Ya no necesitamos 'escuchar' la tecla Escape aquí.
+    // El componente PlayerInput lo hace por nosotros.
+
+
+    /// <summary>
+    /// Esta función es llamada automáticamente por el 'PlayerInput' (Behavior: Send Messages)
+    /// cuando la acción "Pause" (que bindeamos a Escape) es disparada.
+    /// El nombre debe coincidir: "On" + "Pause" (el nombre de tu Acción).
+    /// </summary>
+    public void OnPause()
     {
-        // Comprueba si se pulsó la tecla "Escape"
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // Invertimos el estado de pausa
+        if (isPaused)
         {
-            if (isPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
         }
     }
 
