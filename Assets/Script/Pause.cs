@@ -1,61 +1,64 @@
-using System;
+// Archivo: Pause.cs
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; // Para volver al menú
 
-public class PauseMenu : MonoBehaviour
+/// <summary>
+/// Gestiona el menú de pausa, el tiempo del juego y la vuelta al menú.
+/// </summary>
+public class Pause : MonoBehaviour
 {
-    [Header("Input")]
-    [SerializeField] private InputActionReference pauseAction;
-    public GameObject MenuPause;
-    public bool isPaused = false;
+    [Tooltip("El panel de UI que se muestra al pausar.")]
+    [SerializeField] private GameObject pausePanel;
 
-    private void Awake()
-    {
-        isPaused = false;
-    }
+    private bool isPaused = false;
 
-    private void OnEnable()
+    // Se recomienda llamar a la pausa con el nuevo Input System,
+    // pero para KISS, usaremos Update() con el input antiguo.
+    void Update()
     {
-        pauseAction.action.performed += _ => TogglePause();
-    }
-
-    private void OnDisable()
-    {
-        pauseAction.action.performed -= _ => TogglePause();
-    }
-
-    public void TogglePause()
-    {
-        if (isPaused)
+        // Comprueba si se pulsó la tecla "Escape"
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            reanudar();
-        }
-        else
-        {
-            pausar();
+            if (isPaused)
+            {
+                ResumeGame();
+            }
+            else
+            {
+                PauseGame();
+            }
         }
     }
 
-    public void reanudar()
+    /// <summary>
+    /// Pausa el juego y muestra el panel.
+    /// </summary>
+    public void PauseGame()
     {
-        MenuPause.SetActive(false);
-        Time.timeScale = 1f;
-        isPaused = false;
-    }
-
-    public void pausar()
-    {
-        MenuPause.SetActive(true);
-        Time.timeScale = 0f;
         isPaused = true;
+        pausePanel.SetActive(true);
+        Time.timeScale = 0f; // ¡Congela el tiempo del juego!
     }
 
-    public void irAlMenu()
+    /// <summary>
+    /// Reanuda el juego y oculta el panel.
+    /// </summary>
+    public void ResumeGame()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        isPaused = false;
+        pausePanel.SetActive(false);
+        Time.timeScale = 1f; // Reanuda el tiempo normal
     }
 
-
+    /// <summary>
+    /// Vuelve a la escena del Menú Principal.
+    /// </summary>
+    public void LoadMenu()
+    {
+        // ¡MUY IMPORTANTE! Resetea el tiempo antes de salir de la escena.
+        Time.timeScale = 1f;
+        
+        // Asegúrate de que tu escena de menú se llama "Menu"
+        SceneManager.LoadScene("Menu");
+    }
 }

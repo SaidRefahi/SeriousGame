@@ -1,3 +1,4 @@
+// Archivo: DecisionOption.cs
 using UnityEngine;
 
 /// <summary>

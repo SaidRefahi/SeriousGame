@@ -1,16 +1,22 @@
 // Archivo: PerspectiveJournal.cs
 using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
+using System.Linq; // ¡Necesario para .ToList()!
 
 /// <summary>
 /// Gestiona las Fichas de Conocimiento recolectadas por el jugador.
-/// Utiliza un patrón Singleton para ser fácilmente accesible.
+/// Utiliza un patrón Singleton y guarda/carga los datos en PlayerPrefs.
 /// </summary>
 public class PerspectiveJournal : MonoBehaviour
 {
     // --- Singleton ---
     public static PerspectiveJournal Instance { get; private set; }
+
+    // --- Datos ---
+    private HashSet<string> collectedFichaIDs = new HashSet<string>();
+    
+    // --- Clave de Guardado ---
+    private const string SaveKey = "PerspectiveJournalData";
 
     private void Awake()
     {
@@ -22,25 +28,16 @@ public class PerspectiveJournal : MonoBehaviour
         else
         {
             Instance = this;
-            // Evita que el diario se destruya al cambiar de escena
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
+            
+            // --- ¡CARGAMOS DATOS AL INICIAR! ---
+            LoadJournal();
         }
     }
-    // -------------------
-
-    // Usamos un HashSet para una comprobación de duplicados más eficiente
-    // y para almacenar solo los IDs, que es más ligero.
-    private HashSet<string> collectedFichaIDs = new HashSet<string>();
-
-    // Opcional: si necesitas acceder a los objetos completos frecuentemente.
-    // private List<KnowledgeFicha> collectedFichas = new List<KnowledgeFicha>();
-
 
     /// <summary>
-    /// Añade una nueva ficha al diario.
-    /// Evita añadir duplicados basándose en el FichaID.
+    /// Añade una nueva ficha al diario y guarda el progreso.
     /// </summary>
-    /// <param name="ficha">La ficha a añadir.</param>
     public void AddFicha(KnowledgeFicha ficha)
     {
         if (ficha == null)
@@ -55,17 +52,15 @@ public class PerspectiveJournal : MonoBehaviour
             return;
         }
 
-        // Intentamos añadir el ID al HashSet.
         // Si 'Add' devuelve 'true', es que el ID no existía y se añadió.
         if (collectedFichaIDs.Add(ficha.FichaID))
         {
-            // Opcional: Añadir el objeto completo a la lista si es necesario
-            // collectedFichas.Add(ficha);
-            
             Debug.Log($"Ficha añadida: {ficha.DisplayName} (ID: {ficha.FichaID})");
             
-            // Aquí puedes disparar un evento para que la UI se actualice
-            // OnFichaAdded?.Invoke(ficha);
+            // --- ¡GUARDAMOS CADA VEZ QUE AÑADIMOS UNA NUEVA! ---
+            SaveJournal();
+            
+            // OnFichaAdded?.Invoke(ficha); // Opcional para eventos de UI
         }
         else
         {
@@ -76,12 +71,9 @@ public class PerspectiveJournal : MonoBehaviour
     /// <summary>
     /// Comprueba si el jugador ya posee una ficha específica por su ID.
     /// </summary>
-    /// <param name="fichaID">El ID de la ficha a comprobar.</param>
-    /// <returns>True si la ficha ya ha sido recolectada.</returns>
     public bool HasFicha(string fichaID)
     {
         if (string.IsNullOrEmpty(fichaID)) return false;
-        
         return collectedFichaIDs.Contains(fichaID);
     }
 
@@ -90,10 +82,62 @@ public class PerspectiveJournal : MonoBehaviour
     /// </summary>
     public HashSet<string> GetCollectedFichaIDs()
     {
-        // Devolvemos una nueva colección para evitar modificaciones externas
         return new HashSet<string>(collectedFichaIDs);
     }
 
-    // --- Aquí iría la lógica para GUARDAR/CARGAR el HashSet ---
-    // (por ejemplo, usando PlayerPrefs convirtiendo el HashSet a string, o usando JSON)
+
+    // --- SISTEMA DE GUARDADO / CARGADO ---
+
+    /// <summary>
+    /// Pequeña clase contenedora para que JsonUtility pueda guardar una lista.
+    /// Debe estar marcada como [System.Serializable]
+    /// </summary>
+    [System.Serializable]
+    private class FichaSaveData
+    {
+        public List<string> collectedIDs;
+    }
+
+    /// <summary>
+    /// Carga los IDs guardados desde PlayerPrefs.
+    /// </summary>
+    private void LoadJournal()
+    {
+        if (PlayerPrefs.HasKey(SaveKey))
+        {
+            string json = PlayerPrefs.GetString(SaveKey);
+            
+            // Convierte el JSON de vuelta a nuestra clase contenedora
+            FichaSaveData saveData = JsonUtility.FromJson<FichaSaveData>(json);
+
+            // Convierte la Lista de vuelta a un HashSet
+            collectedFichaIDs = new HashSet<string>(saveData.collectedIDs);
+            Debug.Log($"Diario cargado. {collectedFichaIDs.Count} fichas recolectadas.");
+        }
+        else
+        {
+            Debug.Log("No se encontraron datos de diario. Empezando de cero.");
+        }
+    }
+
+    /// <summary>
+    /// Guarda el HashSet de IDs en PlayerPrefs usando JSON.
+    /// </summary>
+    private void SaveJournal()
+    {
+        // Convierte el HashSet a una Lista (JsonUtility no entiende HashSets)
+        FichaSaveData saveData = new FichaSaveData
+        {
+            collectedIDs = collectedFichaIDs.ToList()
+        };
+
+        // Convierte la clase contenedora a un string JSON
+        string json = JsonUtility.ToJson(saveData);
+
+        // Guarda el string en PlayerPrefs
+        PlayerPrefs.SetString(SaveKey, json);
+        PlayerPrefs.Save(); // Forzar guardado inmediato
+        
+        Debug.Log("Progreso del diario guardado.");
+    }
 }

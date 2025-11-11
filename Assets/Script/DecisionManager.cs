@@ -1,12 +1,11 @@
 // Archivo: DecisionManager.cs
 using UnityEngine;
+using UnityEngine.UI; // ¡Importante para Button!
 using System.Collections.Generic;
-using TMPro; // Para TextMeshProUGUI
-using UnityEngine.UI; // <--- ¡AÑADE ESTA LÍNEA!
+using TMPro; 
 
 /// <summary>
-/// Gestiona la presentación de una decisión en la UI.
-/// Carga una 'Decision' (ScriptableObject) y configura la UI.
+/// Gestiona la presentación de una decisión en la UI y el flujo a la siguiente.
 /// </summary>
 public class DecisionManager : MonoBehaviour
 {
@@ -18,7 +17,7 @@ public class DecisionManager : MonoBehaviour
     [SerializeField] private List<OptionButton> optionButtons; 
 
     [Header("Decision Data")]
-    [Tooltip("Asigna aquí el asset de la Decisión que quieres mostrar.")]
+    [Tooltip("Asigna aquí la PRIMERA decisión de la cadena.")]
     [SerializeField] private Decision currentDecision;
 
     void Start()
@@ -29,16 +28,14 @@ public class DecisionManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No hay ninguna 'Decision' asignada en el DecisionManager.");
-            // Opcional: Ocultar la UI si no hay decisión
-            // gameObject.SetActive(false); 
+            Debug.LogError("No hay ninguna 'Decision' inicial asignada en el DecisionManager.");
+            gameObject.SetActive(false); // Ocultar si no hay nada que mostrar
         }
     }
 
     /// <summary>
     /// Configura y muestra una decisión en la pantalla.
     /// </summary>
-    /// <param name="decision">El asset de Decisión a mostrar.</param>
     public void ShowDecision(Decision decision)
     {
         if (decision == null)
@@ -55,18 +52,18 @@ public class DecisionManager : MonoBehaviour
         // 2. Configura los botones
         for (int i = 0; i < optionButtons.Count; i++)
         {
-            // Comprueba si tenemos suficientes opciones en el asset
             if (i < currentDecision.Options.Count && currentDecision.Options[i] != null)
             {
-                // Asigna la opción al botón
+                // Configura el botón con los datos
                 optionButtons[i].Setup(this, currentDecision.Options[i]);
                 optionButtons[i].gameObject.SetActive(true);
-                // Asegurarse de que el botón esté interactuable al mostrar una nueva decisión
-                optionButtons[i].GetComponent<Button>().interactable = true; 
+                
+                // ¡IMPORTANTE: Reactiva el botón!
+                optionButtons[i].GetComponent<Button>().interactable = true;
             }
             else
             {
-                // Desactiva botones extra si la decisión tiene menos de 4 opciones
+                // Desactiva botones extra
                 optionButtons[i].gameObject.SetActive(false);
             }
         }
@@ -79,32 +76,30 @@ public class DecisionManager : MonoBehaviour
     {
         Debug.Log($"Opción seleccionada: {selectedOption.OptionText}");
 
-        // --- Lógica para después de la decisión ---
-        
         // 1. Desactivar los botones para que no se pueda volver a pulsar
         foreach (var button in optionButtons)
         {
-            // Esta es la línea que causaba el error. Ahora funcionará.
             button.GetComponent<Button>().interactable = false;
         }
 
-        // 2. Esperar unos segundos y/o mostrar feedback
-        // StartCoroutine(LoadNextDecision());
-
-        // 3. Cargar la siguiente decisión (si la tienes asignada en el SO 'Decision')
-        // if (currentDecision.NextDecision != null)
-        // {
-        //     // Reactivar botones antes de mostrar la siguiente decisión
-        //     foreach (var button in optionButtons)
-        //     {
-        //         button.GetComponent<Button>().interactable = true;
-        //     }
-        //     ShowDecision(currentDecision.NextDecision);
-        // }
-        // else
-        // {
-        //     Debug.Log("Fin de la cadena de decisiones.");
-        //     gameObject.SetActive(false); // Ocultar la UI de decisión
-        // }
+        // 2. Comprobar si hay una siguiente decisión en la cadena
+        if (currentDecision.NextDecision != null)
+        {
+            // Cargar la siguiente decisión
+            // Opcional: Añadir un retraso con una Corrutina aquí
+            ShowDecision(currentDecision.NextDecision);
+        }
+        else
+        {
+            // Es el final de la simulación
+            Debug.Log("Fin de la cadena de decisiones.");
+            // Aquí puedes mostrar un panel de "Fin" o volver al menú
+            // Ejemplo: Invoke(nameof(GoToMenu), 2f); 
+        }
     }
+
+    // private void GoToMenu()
+    // {
+    //     UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
+    // }
 }

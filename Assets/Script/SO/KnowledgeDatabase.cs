@@ -1,4 +1,3 @@
-// Archivo: KnowledgeDatabase.cs
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +20,6 @@ public class KnowledgeDatabase : ScriptableObject
     public KnowledgeFicha GetFichaByID(string id)
     {
         // Usamos Linq para encontrar la primera ficha que coincida con el ID.
-        // Es más lento que un Diccionario, pero más fácil de configurar en el Inspector.
         return allFichas.FirstOrDefault(ficha => ficha.FichaID == id);
     }
 }
