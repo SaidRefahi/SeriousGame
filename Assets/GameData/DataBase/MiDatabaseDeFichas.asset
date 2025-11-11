@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eaf38e23ad06da47983d9069d37b267, type: 3}
-  m_Name: KnowledgeDatabase
+  m_Name: MiDatabaseDeFichas
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeDatabase
   allFichas:
-  - {fileID: 11400000, guid: 3ce02f5793ecde8488e38d0fc31077ec, type: 2}
-  - {fileID: 11400000, guid: 9436da0cbdc2d9f4c813bdf42de939b0, type: 2}
-  - {fileID: 11400000, guid: ce7780236de0d4f40acde846ab9172c7, type: 2}
-  - {fileID: 11400000, guid: ad33cb64ce172ec49868297994483272, type: 2}
+  - {fileID: 11400000, guid: da43877ba201e914ea19d67c43810c77, type: 2}
+  - {fileID: 11400000, guid: 15d1894c909df1544981e5ba23a44a93, type: 2}
+  - {fileID: 11400000, guid: 7c6d45c05b5980b4a8d922158c06b301, type: 2}
+  - {fileID: 11400000, guid: 58b34241499732f41b61cb0276dc4d07, type: 2}

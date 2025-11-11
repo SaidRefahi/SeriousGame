@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b020b9a7024425468f4b6b96cbff7a4, type: 3}
-  m_Name: Ficha_Opcion4
+  m_Name: Ficha_A2
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
-  FichaID: 
+  FichaID: A2
   DisplayName: 
-  Description: 4
+  Description: 
   Icon: {fileID: 0}
