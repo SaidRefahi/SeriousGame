@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
   m_Name: Opcion_A 3
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
-  OptionText: Soy la opcion 4
+  OptionText: "Buscar un atajo (ex\xE1menes viejos, res\xFAmenes \"milagrosos\")."
   FichaToGrant: {fileID: 11400000, guid: 58b34241499732f41b61cb0276dc4d07, type: 2}

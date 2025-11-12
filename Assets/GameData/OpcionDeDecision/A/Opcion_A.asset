@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
   m_Name: Opcion_A
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
-  OptionText: Soy la opcion 1
+  OptionText: "Quedarse y hacer la marat\xF3n de estudio."
   FichaToGrant: {fileID: 11400000, guid: da43877ba201e914ea19d67c43810c77, type: 2}

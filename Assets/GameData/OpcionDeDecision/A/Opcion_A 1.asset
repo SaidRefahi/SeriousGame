@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
   m_Name: Opcion_A 1
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
-  OptionText: Soy la opcion 2
+  OptionText: Salir 3 horas para despejarse y mantener su red de apoyo.
   FichaToGrant: {fileID: 11400000, guid: 15d1894c909df1544981e5ba23a44a93, type: 2}

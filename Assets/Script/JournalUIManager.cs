@@ -93,4 +93,24 @@ public class JournalUIManager : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// Se llama desde el botón "Resetear Progreso".
+    /// Llama al PerspectiveJournal para borrar los datos y luego
+    /// refresca la UI del diario.
+    /// </summary>
+    public void HandleResetButton()
+    {
+        // 1. Pedir al gestor de datos que borre todo
+        if (PerspectiveJournal.Instance != null)
+        {
+            PerspectiveJournal.Instance.ResetJournal();
+        }
+
+        // 2. Volver a poblar el diario (que ahora estará vacío)
+        // Esto refresca la UI al instante.
+        PopulateJournal();
+        
+        Debug.Log("UI del diario refrescada después del reseteo.");
+    }
 }

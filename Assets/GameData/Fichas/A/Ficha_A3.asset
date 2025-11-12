@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A3
   DisplayName: FICHA 4
-  Description: SOY LA FICHA 4
+  Description: "Buscar un atajo (ex\xE1menes viejos, res\xFAmenes \"milagrosos\")."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

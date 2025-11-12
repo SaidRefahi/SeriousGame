@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
   m_Name: Opcion_A 2
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
-  OptionText: Soy la opcion 3
+  OptionText: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
   FichaToGrant: {fileID: 11400000, guid: 7c6d45c05b5980b4a8d922158c06b301, type: 2}

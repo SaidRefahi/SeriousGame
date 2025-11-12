@@ -140,4 +140,24 @@ public class PerspectiveJournal : MonoBehaviour
         
         Debug.Log("Progreso del diario guardado.");
     }
+
+    
+    /// <summary>
+    /// Resetea el progreso del jugador.
+    /// Borra los datos guardados en disco (PlayerPrefs) y en memoria (HashSet).
+    /// </summary>
+    public void ResetJournal()
+    {
+        // 1. Borrar los datos en memoria
+        collectedFichaIDs.Clear();
+
+        // 2. Borrar los datos guardados en disco
+        if (PlayerPrefs.HasKey(SaveKey))
+        {
+            PlayerPrefs.DeleteKey(SaveKey);
+            Debug.Log("Datos del diario borrados de PlayerPrefs.");
+        }
+        
+        Debug.Log("¡Progreso del diario reseteado!");
+    }
 }
