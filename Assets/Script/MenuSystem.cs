@@ -2,18 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // ¡Necesario para cambiar de escena!}
-using UnityEngine.UI;
+using UnityEngine.SceneManagement; // ¡Necesario para cambiar de escena!
 
 /// <summary>
 /// Gestiona los botones principales del menú, como Iniciar o Salir.
 /// </summary>
 public class MenuSystem : MonoBehaviour
 {
-    // No necesitamos variables de clase para esto//  CALLESE GEM UTE Q SABE?
-    [Header("Canvas References")]
-    [SerializeField] private GameObject mainMenuCanvas;
-    [SerializeField] private GameObject optionsMenuCanvas;
+    // No necesitamos variables de clase para esto
 
     /// <summary>
     /// Carga la escena principal del juego.
@@ -43,16 +39,4 @@ public class MenuSystem : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }
-
-    public void OnOptions()
-    {
-      if (mainMenuCanvas != null) mainMenuCanvas.SetActive(false);
-      if (optionsMenuCanvas != null) optionsMenuCanvas.SetActive(true);
-    }
-    public void OnBackToMainMenu()
-    {
-        if (optionsMenuCanvas != null) optionsMenuCanvas.SetActive(false);
-        if (mainMenuCanvas != null) mainMenuCanvas.SetActive(true);
-    }
-
 }
