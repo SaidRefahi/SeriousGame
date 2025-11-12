@@ -1,53 +1,60 @@
-// Archivo: DecisionManager.cs (ACTUALIZADO)
+// Archivo: DecisionManager.cs (¡MUY ACTUALIZADO!)
 using UnityEngine;
-using UnityEngine.UI; // ¡Importante para Button!
+using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro; 
+using UnityEngine.SceneManagement; // Para volver al menú
 
 /// <summary>
-/// Gestiona la presentación de una decisión en la UI y el flujo a la siguiente.
-/// FLUJO: Muestra dilema -> Espera "Siguiente" -> Muestra opciones.
+/// Gestiona la presentación de una decisión, sus opciones Y sus consecuencias.
+/// Controla el flujo completo de una pantalla de decisión.
 /// </summary>
 public class DecisionManager : MonoBehaviour
 {
-    [Header("UI References")]
-    [Tooltip("El campo de texto para mostrar la pregunta o dilema.")]
-    [SerializeField] private TextMeshProUGUI decisionPromptText;
+    // Estados para saber qué está haciendo el botón "Siguiente"
+    private enum DecisionState
+    {
+        ShowingDilemma,     // Mostrando el dilema, "Siguiente" mostrará opciones
+        ShowingOptions,     // Mostrando opciones, "Siguiente" está oculto
+        ShowingConsequence  // Mostrando la consecuencia, "Siguiente" pasará al próximo dilema
+    }
+
+    [Header("Gestor de Flujo")]
+    [SerializeField] private GameFlowManager gameFlowManager;
     
-    [Tooltip("El GameObject que CONTIENE los 4 botones de opción.")]
-    [SerializeField] private GameObject panelOpciones; // <--- ¡NUEVO!
-
-    [Tooltip("El botón para pasar del dilema a las opciones.")]
-    [SerializeField] private Button botonSiguiente; // <--- ¡NUEVO!
-
-    [Tooltip("La lista de los 4 botones de opción de la UI.")]
+    [Header("UI References")]
+    [SerializeField] private Image decisionBackgroundImage; 
+    [SerializeField] private TextMeshProUGUI decisionPromptText; 
+    [SerializeField] private GameObject panelOpciones; 
+    [SerializeField] private Button botonSiguiente; 
     [SerializeField] private List<OptionButton> optionButtons; 
 
-    [Header("Decision Data")]
-    [Tooltip("Asigna aquí la PRIMERA decisión de la cadena.")]
-    [SerializeField] private Decision currentDecision;
+    private Decision currentDecision;
+    private DecisionState currentState;
+    private DecisionOption lastChosenOption; // Para recordar qué opción se eligió
 
     void Start()
     {
-        if (currentDecision != null)
+        if (gameFlowManager == null || gameFlowManager.StartingDecision == null)
         {
-            ShowDecision(currentDecision);
-        }
-        else
-        {
-            Debug.LogError("No hay ninguna 'Decision' inicial asignada en el DecisionManager.");
-            gameObject.SetActive(false); 
+            Debug.LogError("¡No se encontró GameFlowManager o no hay StartingDecision asignada!");
+            return;
         }
 
-        // --- Configurar el listener para el botón "Siguiente" ---
+        // --- ¡CAMBIO IMPORTANTE EN EL BOTÓN SIGUIENTE! ---
+        // Borramos cualquier listener viejo y asignamos uno nuevo y permanente.
         if (botonSiguiente != null)
         {
-            botonSiguiente.onClick.AddListener(ShowOptions);
+            botonSiguiente.onClick.RemoveAllListeners(); // Limpiamos por si acaso
+            botonSiguiente.onClick.AddListener(OnBotonSiguienteClicked); // <--- NUEVA FUNCIÓN
         }
+        
+        currentDecision = gameFlowManager.StartingDecision;
+        ShowDecision(currentDecision);
     }
 
     /// <summary>
-    /// Configura y muestra el DILEMA. Oculta las opciones.
+    /// Configura la UI para mostrar el DILEMA (Texto + Fondo del Dilema).
     /// </summary>
     public void ShowDecision(Decision decision)
     {
@@ -59,10 +66,15 @@ public class DecisionManager : MonoBehaviour
 
         currentDecision = decision;
 
-        // 1. Muestra el texto de la pregunta
+        // 1. Mostrar Texto e Imagen del DILEMA
         decisionPromptText.text = currentDecision.DecisionPrompt;
+        if (decisionBackgroundImage != null && currentDecision.BackgroundImage != null)
+        {
+            decisionBackgroundImage.sprite = currentDecision.BackgroundImage;
+            decisionBackgroundImage.gameObject.SetActive(true);
+        }
 
-        // 2. Configura los botones (aunque estén ocultos)
+        // 2. Configurar los botones de opción (se quedan ocultos)
         for (int i = 0; i < optionButtons.Count; i++)
         {
             if (i < currentDecision.Options.Count && currentDecision.Options[i] != null)
@@ -77,55 +89,81 @@ public class DecisionManager : MonoBehaviour
             }
         }
 
-        // 3. --- ¡AQUÍ ESTÁ LA NUEVA LÓGICA! ---
-        // Oculta el panel de opciones y muestra el botón "Siguiente"
+        // 3. Poner la UI en estado "Dilema"
         panelOpciones.SetActive(false);
         botonSiguiente.gameObject.SetActive(true);
+        currentState = DecisionState.ShowingDilemma;
     }
 
     /// <summary>
-    /// Se llama cuando el jugador pulsa "Siguiente".
-    /// Muestra las opciones y oculta el botón "Siguiente".
+    /// Muestra las opciones. Se llama desde OnBotonSiguienteClicked.
     /// </summary>
     public void ShowOptions()
     {
         panelOpciones.SetActive(true);
         botonSiguiente.gameObject.SetActive(false);
+        currentState = DecisionState.ShowingOptions;
     }
 
     /// <summary>
     /// Se llama desde OptionButton cuando el jugador elige una opción.
+    /// AHORA MUESTRA LA CONSECUENCIA.
     /// </summary>
-    public void OnOptionSelected(DecisionOption selectedOption)
+    public void OnOptionSelected(DecisionOption chosenOption)
     {
-        Debug.Log($"Opción seleccionada: {selectedOption.OptionText}");
+        lastChosenOption = chosenOption; // Guardamos la opción elegida
 
-        // 1. Desactivar los botones para que no se pueda volver a pulsar
-        foreach (var button in optionButtons)
+        // 1. Ocultar panel de opciones
+        panelOpciones.SetActive(false);
+
+        // 2. Mostrar Texto e Imagen de la CONSECUENCIA
+        decisionPromptText.text = chosenOption.ConsequenceText;
+        if (decisionBackgroundImage != null && chosenOption.ConsequenceImage != null)
         {
-            button.GetComponent<Button>().interactable = false;
+            decisionBackgroundImage.sprite = chosenOption.ConsequenceImage;
+            decisionBackgroundImage.gameObject.SetActive(true);
         }
 
-        // 2. Comprobar si hay una siguiente decisión en la cadena
-        if (currentDecision.NextDecision != null)
+        // 3. Mostrar el botón "Siguiente" y cambiar de estado
+        botonSiguiente.gameObject.SetActive(true);
+        currentState = DecisionState.ShowingConsequence;
+    }
+
+    /// <summary>
+    /// Esta ÚNICA función maneja el botón "Siguiente".
+    /// Decide qué hacer basándose en el estado actual.
+    /// </summary>
+    public void OnBotonSiguienteClicked()
+    {
+        if (currentState == DecisionState.ShowingDilemma)
         {
-            // Cargar la siguiente decisión
-            // ShowDecision se encargará de ocultar las opciones y mostrar "Siguiente"
-            ShowDecision(currentDecision.NextDecision);
+            // Estábamos viendo el dilema, ahora mostramos las opciones.
+            ShowOptions();
         }
-        else
+        else if (currentState == DecisionState.ShowingConsequence)
         {
-            // Es el final de la simulación
-            Debug.Log("Fin de la cadena de decisiones.");
-            // Ocultamos el panel de opciones por si acaso
-            panelOpciones.SetActive(false);
-            // Aquí puedes mostrar un panel de "Fin del Juego" o volver al menú
-            // Invoke(nameof(GoToMenu), 2f); 
+            // Estábamos viendo la consecuencia, ahora pasamos al siguiente dilema.
+            Decision next = currentDecision.NextDecision;
+            
+            if (next != null)
+            {
+                // Cargar el siguiente dilema
+                ShowDecision(next);
+            }
+            else
+            {
+                // Fin de la historia, volver al menú
+                Debug.Log("Fin de la cadena de decisiones. Volviendo al menú.");
+                GoToMenu();
+            }
         }
     }
 
-    // private void GoToMenu()
-    // {
-    //     UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
-    // }
+    /// <summary>
+    /// Vuelve al menú principal.
+    /// </summary>
+    private void GoToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

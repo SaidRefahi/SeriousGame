@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
+  m_Name: Decision_V3A
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
+  OptionText: "Seguir en Medicina, aferr\xE1ndose al sue\xF1o original."
+  ConsequenceImage: {fileID: -988914803692160239, guid: d89c3186d2e6fb54693120cb89c1cb4b, type: 3}
+  ConsequenceText: "Afronta un camino de sacrificio a largo plazo. Desarrolla una
+    resiliencia extraordinaria. Se mantiene fiel a su vocaci\xF3n original, aceptando
+    el alto costo."
+  FichaToGrant: {fileID: 11400000, guid: 6e7e20b0a7cc81d4f99653219c3bbc1a, type: 2}

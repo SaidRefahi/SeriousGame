@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
+  m_Name: Decision_V3D
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
+  OptionText: "Seguir en Medicina, pero buscar una certificaci\xF3n t\xE9cnica corta
+    en paralelo."
+  ConsequenceImage: {fileID: 6151387977099964788, guid: 7725475b0210a7f41ad612585157d566, type: 3}
+  ConsequenceText: "Su carga de estudio, que ya era alta, se vuelve insostenible.
+    Termina agotada y rindiendo mal en ambas cosas. El intento de tener un \"Plan
+    B\" termina saboteando al \"Plan A\" por falta de foco y energ\xEDa."
+  FichaToGrant: {fileID: 11400000, guid: 81f0a0a200523d34eba4f3e17a7d92a2, type: 2}

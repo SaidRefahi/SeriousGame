@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
+  m_Name: Decision_V2_Dinero
+  m_EditorClassIdentifier: Assembly-CSharp::Decision
+  DecisionPrompt: "Habitaci\xF3n de Valentina. La notebook con pantalla en negro.
+    El cargador no funciona. Mensaje en el grupo de la facultad: \"El apunte de Histolog\xEDa
+    ya est\xE1... aument\xF3, ahora sale $XXXX.\"\r\nNarrador: \"Era d\xEDa 20. El
+    dinero estaba calculado al centavo... El cargador roto y el apunte no eran un
+    gasto\u2014eran una crisis. La idea de volver a llamar a casa le generaba una
+    culpa que le oprim\xEDa el pecho."
+  BackgroundImage: {fileID: -6543713957166017575, guid: 2dc00b8a36fe2cf4f9e555041998097b, type: 3}
+  Options:
+  - {fileID: 11400000, guid: a429fb2e6f6ad39469be2a1c548a8c34, type: 2}
+  - {fileID: 11400000, guid: a8774c99c887f694fba52ab4ef1fe00e, type: 2}
+  - {fileID: 11400000, guid: ac2ac911dc5bc5144b4af18a7aab826a, type: 2}
+  - {fileID: 11400000, guid: 7c5024f277ccd2a4ab8ce51926ab4c29, type: 2}
+  NextDecision: {fileID: 11400000, guid: 9942b64a57623834289faed01bdc4990, type: 2}

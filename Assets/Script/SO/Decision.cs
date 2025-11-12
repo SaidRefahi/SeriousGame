@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 /// <summary>
 /// ScriptableObject que representa una decisión completa.
-/// Contiene la pregunta, la lista de opciones y la siguiente decisión.
+/// Contiene la pregunta, las opciones, la siguiente decisión y la imagen de fondo.
 /// </summary>
 [CreateAssetMenu(fileName = "Decision_", menuName = "Juego de Decisiones/Decisión")]
 public class Decision : ScriptableObject
@@ -12,6 +12,11 @@ public class Decision : ScriptableObject
     [Tooltip("El texto de la pregunta o dilema que se presenta al jugador.")]
     [TextArea(3, 6)]
     public string DecisionPrompt;
+
+    // --- ¡NUEVA LÍNEA! ---
+    [Tooltip("El fondo visual para este dilema o contexto narrativo.")]
+    public Sprite BackgroundImage;
+    // ---------------------
 
     [Tooltip("La lista de opciones para esta decisión. Idealmente 4.")]
     public List<DecisionOption> Options;

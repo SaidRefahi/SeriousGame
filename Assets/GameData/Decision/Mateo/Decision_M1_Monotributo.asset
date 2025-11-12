@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
+  m_Name: Decision_M1_Monotributo
+  m_EditorClassIdentifier: Assembly-CSharp::Decision
+  DecisionPrompt: Vas a elegir una de las opciones
+  Options:
+  - {fileID: 11400000, guid: d76c323e41b09184a94e9703fcdac610, type: 2}
+  - {fileID: 11400000, guid: 3e2d54459c656634696342418fd4822e, type: 2}
+  - {fileID: 11400000, guid: 412e97faecc03cc4eae81ad5e3187167, type: 2}
+  - {fileID: 11400000, guid: 8c3ccbc7cffcd51429c85ff16a527141, type: 2}
+  NextDecision: {fileID: 11400000, guid: 1e1f946c0b840c64e97f184d028e0d9b, type: 2}

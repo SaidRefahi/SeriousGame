@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
+  m_Name: Decision_V2C
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
+  OptionText: Intentar "pilotearla" sin gastar (ir a la biblioteca, pedir prestado).
+  ConsequenceImage: {fileID: 3383617550922596140, guid: 28b725cb264d42940aad32d49aa6a22d, type: 3}
+  ConsequenceText: "No gasta un peso y no pide dinero. Sin embargo, el costo log\xEDstico
+    y de tiempo es alt\xEDsimo. El estr\xE9s de coordinar, la ineficiencia de estudiar
+    en la biblioteca y la incomodidad la dejan igual de agotada que si hubiera trabajado,
+    pero sin resolver el problema de ra\xEDz."
+  FichaToGrant: {fileID: 11400000, guid: 3ee296f5bbc915c43ac17641d59a2cf7, type: 2}

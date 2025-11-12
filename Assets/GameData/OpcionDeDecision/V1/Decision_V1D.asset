@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
+  m_Name: Decision_V1D
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
+  OptionText: "Buscar un atajo (ex\xE1menes viejos, res\xFAmenes \"milagrosos\")."
+  ConsequenceImage: {fileID: -4826616964816771487, guid: 4639086376ce8fe44b75725e269d3538, type: 3}
+  ConsequenceText: "El \"examen modelo\" estaba desactualizado. El examen real es
+    completamente diferente. Aprueba, pero con lo justo (un 4), quedando en la cuerda
+    floja para el resto del a\xF1o. Gast\xF3 todo su tiempo apostando a una sola
+    carta en lugar de construir una base s\xF3lida."
+  FichaToGrant: {fileID: 11400000, guid: 58b34241499732f41b61cb0276dc4d07, type: 2}

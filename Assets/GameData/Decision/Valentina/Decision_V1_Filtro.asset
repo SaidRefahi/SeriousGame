@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
+  m_Name: Decision_V1_Filtro
+  m_EditorClassIdentifier: Assembly-CSharp::Decision
+  DecisionPrompt: "...El examen de Anatom\xEDa del lunes no era solo una prueba\u2014era
+    'el' filtro... El agotamiento y la ansiedad eran sus compa\xF1eros de estudio
+    m\xE1s constantes.\"\r\nNotificaci\xF3n de amigas: \"Vale, \xA1basta de encerrarte!
+    Vamos a tomar algo en la Ar\xEDstides. \xA1Necesit\xE1s cortar un poco!"
+  BackgroundImage: {fileID: -2045687014714097172, guid: 2525b794e327a44468e87978a58f54b4, type: 3}
+  Options:
+  - {fileID: 11400000, guid: 0b5d227209bdf0446b1c1774110764fa, type: 2}
+  - {fileID: 11400000, guid: 0d120022ce2c05746a0ae20d8f23b7c0, type: 2}
+  - {fileID: 11400000, guid: 1c82e8404948c25458a4f85def6f9413, type: 2}
+  - {fileID: 11400000, guid: f0a2b0cf4cf31f6409478da266a169cd, type: 2}
+  NextDecision: {fileID: 11400000, guid: 152060cdb456aa14cbe463bb06b30791, type: 2}
