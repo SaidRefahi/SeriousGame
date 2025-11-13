@@ -13,4 +13,13 @@ MonoBehaviour:
   m_Name: Decision_A2D
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Rechazar ambas y buscar un trabajo en una bodega boutique m\xE1s alineada."
+  ConsequenceImage: {fileID: -6711132418740531039, guid: ac9ff417d29c85749a7fb4a85d1412ff, type: 3}
+  ConsequenceText: "Rechazas la pasant\xEDa (porque es solo laboratorio) y decides
+    que el turismo es mucho riesgo. En su lugar, buscas activamente una pasant\xEDa
+    paga en una bodega boutique (m\xE1s peque\xF1a) donde te permitan rotar por todas
+    las \xE1reas: vi\xF1edo, producci\xF3n y turismo. Tardas m\xE1s en encontrar
+    trabajo y quiz\xE1s ganas un poco menos. Sin embargo, obtienes una experiencia
+    360\xB0. Aprendes de laboratorio y de turismo, pero en un entorno controlado
+    y con un sueldo. Es la opci\xF3n m\xE1s lenta, pero la de aprendizaje m\xE1s
+    integral."
   FichaToGrant: {fileID: 11400000, guid: 2d177dca7cb705d49a3ec30c7debab80, type: 2}

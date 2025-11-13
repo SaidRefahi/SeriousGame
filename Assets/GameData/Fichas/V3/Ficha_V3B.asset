@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_V3B
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: V3B
-  DisplayName: FICHA 2
-  Description: Salir 3 horas para despejarse y mantener su red de apoyo.
+  DisplayName: El Coraje de Recalcular el Rumbo
+  Description: "Abandonar un camino no siempre es un fracaso, a veces es un acto
+    de valent\xEDa y autoconocimiento. Reconocer que un sue\xF1o ha cambiado o que
+    un camino no es para ti requiere m\xE1s coraje que seguir por inercia."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

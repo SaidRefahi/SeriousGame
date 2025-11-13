@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
   m_Name: Decision_M3_ElImpostor
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  DecisionPrompt: 
+  DecisionPrompt: "Han pasado seis meses. Tu habitaci\xF3n es ahora una oficina en
+    toda regla, con un segundo monitor y una silla gamer. En tu billetera virtual
+    hay una suma considerable. Pero el \xE9xito tiene un eco extra\xF1o en el silencio
+    de tu pieza. Est\xE1s solo, comiendo una pizza fr\xEDa sobre el teclado a las
+    10 de la noche. En las reuniones por Zoom, te sientes un fraude por no tener
+    un t\xEDtulo universitario."
+  BackgroundImage: {fileID: 5065051081347183668, guid: 50fb3ced3b6fff04597b6d2abc2f6280, type: 3}
   Options:
   - {fileID: 11400000, guid: cd2d1d9cd2236f9439998d7ee724fbae, type: 2}
   - {fileID: 11400000, guid: d0500be85a598344ba43206c4cf78554, type: 2}

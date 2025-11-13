@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_V1C
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: V1C
-  DisplayName: FICHA 3
-  Description: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
+  DisplayName: "La Par\xE1lisis por Ansiedad"
+  Description: "A veces, la presi\xF3n no motiva, sino que congela. Reconocer que
+    est\xE1s paralizado por la ansiedad es el primer paso para poder gestionarla,
+    antes de que el tiempo se consuma solo."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_M2A
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M2A
-  DisplayName: FICHA 1
-  Description: "Quedarse y hacer la marat\xF3n de estudio."
+  DisplayName: La Jaula Dorada de tu Habilidad
+  Description: "Ser muy bueno en una cosa puede ser una trampa. Si no desarrollas
+    las habilidades complementarias que el mercado demanda (como la comunicaci\xF3n
+    o los idiomas), tu talento principal puede quedar encerrado."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

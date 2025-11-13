@@ -14,4 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Par\xE1lisis: Dejar el dinero en la billetera virtual sin tocarlo
     por miedo."
+  ConsequenceImage: {fileID: 6386771822558972017, guid: b6ce50091fd037246960710547671fe5, type: 3}
+  ConsequenceText: "Intentas averiguar por tu cuenta. Entras a la p\xE1gina de AFIP.
+    Te mareas con siglas (CUIT, IVA, IIBB, Monotributo). El miedo a hacer algo mal
+    y recibir una multa es tan grande que no haces nada. El dinero queda \"congelado\"
+    en la billetera virtual. Sigue trabajando y acumulando dinero que no puedes usar.
+    Pasan meses y tu problema crece. Te ves obligado a pedirle dinero a tus padres
+    para tus gastos diarios, a pesar de tener miles de d\xF3lares \"virtuales\".
+    El miedo a la burocracia te mantiene en una pobreza autoimpuesta."
   FichaToGrant: {fileID: 11400000, guid: 9506ad094e87e3d408bc3f6fbbd69d1d, type: 2}

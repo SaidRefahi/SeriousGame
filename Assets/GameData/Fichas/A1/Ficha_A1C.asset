@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A1C
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A1C
-  DisplayName: FICHA 3
-  Description: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
+  DisplayName: Los Datos no Ganan Discusiones Emocionales
+  Description: "Puedes tener todos los datos correctos, pero si la otra persona siente
+    que est\xE1s atacando su identidad o su legado, la l\xF3gica no sirve. Las decisiones
+    familiares rara vez son 100% racionales."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

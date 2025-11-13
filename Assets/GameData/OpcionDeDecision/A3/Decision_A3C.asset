@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Decision_A3C
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Intentar aplazar la beca un a\xF1o para estabilizar la finca."
+  ConsequenceImage: {fileID: -817021999775527378, guid: 4d7508a640b93214c8ecde5311cac8af, type: 3}
+  ConsequenceText: "Escribes a Burdeos y logras aplazar la beca por un a\xF1o. Le
+    dices a tu padre: \"Dame 12 meses\". Trabajas d\xEDa y noche para implementar
+    la unidad de turismo y modernizar la producci\xF3n, buscando dejar un sistema
+    andando. Es un a\xF1o de un estr\xE9s monumental. Logras estabilizar las finanzas,
+    pero el sistema a\xFAn depende mucho de ti. Te vas a Francia un a\xF1o despu\xE9s,
+    pero con la culpa de dejar a tu padre con un sistema a medio armar. La finca
+    sobrevive, pero no prospera."
   FichaToGrant: {fileID: 11400000, guid: c82d3c6c1d0cd984297204216659a7e6, type: 2}

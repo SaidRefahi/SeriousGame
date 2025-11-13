@@ -14,4 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "La \"V\xEDa Gris\": Inscribirse en la categor\xEDa m\xE1s baja solo
     para \"figurar\"."
+  ConsequenceImage: {fileID: -8194477794327446978, guid: e1b6e6b08f72c0a4cb9ea68c722cf6dd, type: 3}
+  ConsequenceText: "Vas al contador y le pides \"la m\xEDnima\". Te inscribes en
+    la categor\xEDa m\xE1s baja del Monotributo. Facturas solo 100 USD de los 500
+    USD para tener \"movimiento\" y justificar tu obra social. El resto lo sigues
+    moviendo \"en negro\". Sientes que tienes \"lo mejor de los dos mundos\": est\xE1s
+    cubierto legalmente con un m\xEDnimo y maximizas tu ganancia. El problema es
+    que tu \"blanqueo\" es tan bajo que sigue sin poder justificar ingresos para
+    un alquiler o un cr\xE9dito. Vives en una falsa sensaci\xF3n de seguridad."
   FichaToGrant: {fileID: 11400000, guid: d2b08958113e6f44aa6d042dd68bcddb, type: 2}

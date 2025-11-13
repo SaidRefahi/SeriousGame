@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_M3C
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M3C
-  DisplayName: FICHA 3
-  Description: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
+  DisplayName: "Comunidad T\xE9cnica vs. Red de Apoyo Social"
+  Description: "Una comunidad online puede resolver tus dudas t\xE9cnicas, pero rara
+    vez sustituye el valor de una red de apoyo social y f\xEDsica. Son dos necesidades
+    diferentes."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

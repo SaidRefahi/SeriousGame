@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A3B
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A3B
-  DisplayName: FICHA 2
-  Description: Salir 3 horas para despejarse y mantener su red de apoyo.
+  DisplayName: "La Ra\xEDz como Ancla y Motor"
+  Description: "Elegir quedarse y apostar por tu lugar de origen puede ser un ancla
+    que limita tu exposici\xF3n global, pero tambi\xE9n puede ser el motor que te
+    da un prop\xF3sito \xFAnico y la oportunidad de transformar tu propia comunidad."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

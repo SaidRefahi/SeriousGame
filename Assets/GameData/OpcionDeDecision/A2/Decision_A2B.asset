@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Decision_A2B
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Rechazar la pasant\xEDa y armar una experiencia tur\xEDstica (emprendimiento)."
+  ConsequenceImage: {fileID: 2267940524452344551, guid: cba7d87004e23cb48b439d8c0d6ea2b7, type: 3}
+  ConsequenceText: "Rechazas la pasant\xEDa. Pintas un cartel nuevo, abres una cuenta
+    de Instagram para la finca (@FincaGomez) y ofreces una experiencia simple: un
+    tour contado por ti misma y una degustaci\xF3n de tu vino experimental con empanadas
+    caseras. El boca a boca funciona. El ingreso inicial es bajo y riesgoso, pero
+    poco a poco construyes una nueva unidad de negocio para la familia. Aprendes
+    sobre marketing y servicio al cliente, habilidades que no habr\xEDas aprendido
+    en el laboratorio."
   FichaToGrant: {fileID: 11400000, guid: bba4d598905bc26418fe1d221976cbc6, type: 2}

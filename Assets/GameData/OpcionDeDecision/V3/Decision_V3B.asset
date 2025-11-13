@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Averiguar para pasarse a Enfermer\xEDa, una carrera m\xE1s \"realista\"."
   ConsequenceImage: {fileID: -7017266547423512286, guid: 908d88f2ffd997042b93a0cd8d865540, type: 3}
-  ConsequenceText: "Libera una inmensa carga de presi\xF3n. Aunque debe lidiar con
-    la sensaci\xF3n de \"fracaso\" y las expectativas externas, su bienestar mental
-    mejora dr\xE1sticamente. Descubre que la vocaci\xF3n puede tener muchas formas."
+  ConsequenceText: "Investigas el plan de estudios de Enfermer\xEDa. Hablas con profesionales
+    y descubres un campo que tambi\xE9n te apasiona, centrado en el cuidado y con
+    salida laboral m\xE1s r\xE1pida. Aunque sientes que \"bajas un escal\xF3n\" seg\xFAn
+    las expectativas de tu familia, tambi\xE9n sientes un enorme alivio. Inicias
+    el proceso de cambio. Liberas una inmensa carga de presi\xF3n y tu bienestar
+    mental mejora dr\xE1sticamente."
   FichaToGrant: {fileID: 11400000, guid: 27819428e475b6049ae28f4e6f1e3eba, type: 2}

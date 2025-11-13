@@ -1,4 +1,4 @@
-// Archivo: DecisionManager.cs (¡MUY ACTUALIZADO!)
+// Archivo: DecisionManager.cs (¡ACTUALIZADO OTRA VEZ!)
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -7,31 +7,33 @@ using UnityEngine.SceneManagement; // Para volver al menú
 
 /// <summary>
 /// Gestiona la presentación de una decisión, sus opciones Y sus consecuencias.
-/// Controla el flujo completo de una pantalla de decisión.
+/// Oculta el texto narrativo cuando se muestran las opciones.
 /// </summary>
 public class DecisionManager : MonoBehaviour
 {
-    // Estados para saber qué está haciendo el botón "Siguiente"
     private enum DecisionState
     {
-        ShowingDilemma,     // Mostrando el dilema, "Siguiente" mostrará opciones
-        ShowingOptions,     // Mostrando opciones, "Siguiente" está oculto
-        ShowingConsequence  // Mostrando la consecuencia, "Siguiente" pasará al próximo dilema
+        ShowingDilemma,
+        ShowingOptions,
+        ShowingConsequence
     }
 
     [Header("Gestor de Flujo")]
     [SerializeField] private GameFlowManager gameFlowManager;
     
     [Header("UI References")]
+    [Tooltip("El objeto 'Scroll View' principal que contiene el texto narrativo.")]
+    [SerializeField] private GameObject scrollTextoNarrativo; // <--- ¡NUEVO!
+
     [SerializeField] private Image decisionBackgroundImage; 
-    [SerializeField] private TextMeshProUGUI decisionPromptText; 
+    [SerializeField] private TextMeshProUGUI decisionPromptText; // (Este sigue siendo el 'Content' del scroll view)
     [SerializeField] private GameObject panelOpciones; 
     [SerializeField] private Button botonSiguiente; 
     [SerializeField] private List<OptionButton> optionButtons; 
 
     private Decision currentDecision;
     private DecisionState currentState;
-    private DecisionOption lastChosenOption; // Para recordar qué opción se eligió
+    private DecisionOption lastChosenOption; 
 
     void Start()
     {
@@ -41,12 +43,10 @@ public class DecisionManager : MonoBehaviour
             return;
         }
 
-        // --- ¡CAMBIO IMPORTANTE EN EL BOTÓN SIGUIENTE! ---
-        // Borramos cualquier listener viejo y asignamos uno nuevo y permanente.
         if (botonSiguiente != null)
         {
-            botonSiguiente.onClick.RemoveAllListeners(); // Limpiamos por si acaso
-            botonSiguiente.onClick.AddListener(OnBotonSiguienteClicked); // <--- NUEVA FUNCIÓN
+            botonSiguiente.onClick.RemoveAllListeners();
+            botonSiguiente.onClick.AddListener(OnBotonSiguienteClicked); 
         }
         
         currentDecision = gameFlowManager.StartingDecision;
@@ -90,6 +90,10 @@ public class DecisionManager : MonoBehaviour
         }
 
         // 3. Poner la UI en estado "Dilema"
+        if (scrollTextoNarrativo != null)
+        {
+            scrollTextoNarrativo.SetActive(true); // <--- ¡MUESTRA EL TEXTO!
+        }
         panelOpciones.SetActive(false);
         botonSiguiente.gameObject.SetActive(true);
         currentState = DecisionState.ShowingDilemma;
@@ -100,6 +104,10 @@ public class DecisionManager : MonoBehaviour
     /// </summary>
     public void ShowOptions()
     {
+        if (scrollTextoNarrativo != null)
+        {
+            scrollTextoNarrativo.SetActive(false); // <--- ¡OCULTA EL TEXTO!
+        }
         panelOpciones.SetActive(true);
         botonSiguiente.gameObject.SetActive(false);
         currentState = DecisionState.ShowingOptions;
@@ -111,7 +119,7 @@ public class DecisionManager : MonoBehaviour
     /// </summary>
     public void OnOptionSelected(DecisionOption chosenOption)
     {
-        lastChosenOption = chosenOption; // Guardamos la opción elegida
+        lastChosenOption = chosenOption; 
 
         // 1. Ocultar panel de opciones
         panelOpciones.SetActive(false);
@@ -124,7 +132,11 @@ public class DecisionManager : MonoBehaviour
             decisionBackgroundImage.gameObject.SetActive(true);
         }
 
-        // 3. Mostrar el botón "Siguiente" y cambiar de estado
+        // 3. Mostrar el botón "Siguiente", el texto, y cambiar de estado
+        if (scrollTextoNarrativo != null)
+        {
+            scrollTextoNarrativo.SetActive(true); // <--- ¡MUESTRA EL TEXTO DE NUEVO!
+        }
         botonSiguiente.gameObject.SetActive(true);
         currentState = DecisionState.ShowingConsequence;
     }
@@ -147,12 +159,10 @@ public class DecisionManager : MonoBehaviour
             
             if (next != null)
             {
-                // Cargar el siguiente dilema
                 ShowDecision(next);
             }
             else
             {
-                // Fin de la historia, volver al menú
                 Debug.Log("Fin de la cadena de decisiones. Volviendo al menú.");
                 GoToMenu();
             }

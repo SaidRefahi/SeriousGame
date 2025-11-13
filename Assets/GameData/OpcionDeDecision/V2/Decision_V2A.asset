@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Pedirle m\xE1s dinero a sus padres, sintiendo la culpa."
   ConsequenceImage: {fileID: 6527708415866148000, guid: 85ac1587cd9956f40bf7635651c3288a, type: 3}
-  ConsequenceText: "Resuelve el problema material inmediatamente. Pero la carga emocional
-    de la culpa afecta su concentraci\xF3n, a\xF1adiendo m\xE1s estr\xE9s."
+  ConsequenceText: "Llamas a tu casa. La conversaci\xF3n es dif\xEDcil. Tus padres
+    acceden con amor, pero notas la preocupaci\xF3n en sus voces.  Resuelves el problema
+    material inmediatamente. Pero la carga emocional de la culpa afecta tu concentraci\xF3n,
+    a\xF1adiendo m\xE1s estr\xE9s a tu rutina."
   FichaToGrant: {fileID: 11400000, guid: f90d0ca446181de4c88285b59b6f1b75, type: 2}

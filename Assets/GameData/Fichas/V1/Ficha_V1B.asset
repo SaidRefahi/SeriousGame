@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_V1B
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: V1B
-  DisplayName: FICHA 2
-  Description: Salir 3 horas para despejarse y mantener su red de apoyo.
+  DisplayName: "La Red de Apoyo como Recurso Estrat\xE9gico"
+  Description: "Tus v\xEDnculos personales no son solo para apoyo emocional. Tu red
+    de contactos es una fuente de informaci\xF3n, oportunidades y recursos pr\xE1cticos
+    que pueden ser tan valiosos como las horas de trabajo individual."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

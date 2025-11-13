@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
   m_Name: Decision_A2_ElFoco
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  DecisionPrompt: 
+  DecisionPrompt: "Las cuentas de la finca familiar no cierran. La necesidad de un
+    ingreso extra es urgente. Tienes dos pesta\xF1as abiertas en tu notebook. Pesta\xF1a
+    1: Un email de una bodega grande y prestigiosa ofreci\xE9ndote una pasant\xEDa
+    muy bien paga en su laboratorio. Pesta\xF1a 2: Una foto de la entrada de tu finca.
+    Ves pasar un bus de turistas por la ruta, siguiendo de largo. La pasant\xEDa
+    es el camino l\xF3gico, pero la imagen de los turistas pasando de largo te duele.
+    \xBFY si el futuro no est\xE1 en venderle uva a los grandes, sino en atraer a
+    los peque\xF1os?"
+  BackgroundImage: {fileID: -6185584025943451330, guid: 8620674c2784a454aadbb000e5fb283c, type: 3}
   Options:
   - {fileID: 11400000, guid: 1f4d2a233b57ac8419294fa37da6e18c, type: 2}
   - {fileID: 11400000, guid: a06220d28e74d2b459df223e915ce07c, type: 2}

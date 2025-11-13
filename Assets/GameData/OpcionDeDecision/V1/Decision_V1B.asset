@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: Salir 3 horas para despejarse y mantener su red de apoyo.
   ConsequenceImage: {fileID: -9110069945035282537, guid: b3494c47065a02746a2a2093c21be11a, type: 3}
-  ConsequenceText: "Su tiempo de estudio se reduce, pero la calidad mejora. Aprueba
-    con una buena nota (no sobresaliente). Termina el fin de semana sinti\xE9ndose
-    conectada y con m\xE1s energ\xEDa."
+  ConsequenceText: "Decides que necesitas un respiro. La escena cambia a un bar bullicioso
+    en la calle Ar\xEDstides. Te r\xEDes y conversas con tus amigas, sintiendo c\xF3mo
+    la tensi\xF3n se disipa. Durante la cena, una amiga te cuenta sobre una t\xE9cnica
+    de mnemotecnia para Anatom\xEDa. Vuelves renovada y con una nueva estrategia.
+    Tu tiempo de estudio se reduce, pero la calidad mejora. Apruebas con una buena
+    nota (no sobresaliente). Terminas el fin de semana sinti\xE9ndote conectada y
+    con m\xE1s energ\xEDa."
   FichaToGrant: {fileID: 11400000, guid: 15d1894c909df1544981e5ba23a44a93, type: 2}

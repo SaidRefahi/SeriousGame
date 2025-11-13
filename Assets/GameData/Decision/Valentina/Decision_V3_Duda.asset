@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
   m_Name: Decision_V3_Duda
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  DecisionPrompt: "Fin de a\xF1o. Notas justas. Su amiga de Hemoterapia entra emocionada:
-    \"\xA1Consegu\xED mis primeras pr\xE1cticas pagas! \xA1En seis meses ya voy a
-    tener matr\xEDcula y un sueldo!\"\r\nNarrador: \"La alegr\xEDa de su amiga fue
-    como un espejo. Llevaba un a\xF1o de sacrificio extremo y a\xFAn le faltaban
-    cinco m\xE1s... La duda, por primera vez, se sent\xEDa m\xE1s fuerte que la vocaci\xF3n."
+  DecisionPrompt: "Es fin de a\xF1o. Miras tus notas finales: aprobaste todo, pero
+    con calificaciones justas. Tu amiga de Hemoterapia entra emocionada: \"\xA1Vale,
+    no sab\xE9s! \xA1Consegu\xED mis primeras pr\xE1cticas pagas en el Hospital Central!
+    \xA1En seis meses ya voy a tener matr\xEDcula y un sueldo!\" La alegr\xEDa de
+    tu amiga es como un espejo. Llevas un a\xF1o de sacrificio extremo y a\xFAn te
+    faltan cinco m\xE1s. La duda, por primera vez, se siente m\xE1s fuerte que tu
+    vocaci\xF3n."
   BackgroundImage: {fileID: 693331519948622503, guid: 19b694b3f453fca48a6533cd1a4ff7cf, type: 3}
   Options:
   - {fileID: 11400000, guid: 2b57558dee1254b4e998d9b8380c70bf, type: 2}

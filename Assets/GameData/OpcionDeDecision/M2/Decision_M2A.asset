@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Decision_M2A
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: Rechazar el proyecto por miedo al idioma.
+  ConsequenceImage: {fileID: -4460006743214545304, guid: e18de9c6efad1e14c90a7e97dc069366, type: 3}
+  ConsequenceText: "Paralizado por la inseguridad, respondes el email agradeciendo
+    pero diciendo que no est\xE1s disponible. Sientes un alivio inmediato al evitar
+    la situaci\xF3n inc\xF3moda, pero al rato te invade un profundo arrepentimiento.
+    Sigues tomando proyectos m\xE1s chicos que no te desaf\xEDan. Evitas la incomodidad
+    y el posible fracaso. Sin embargo, te estancas profesionalmente, atrapado por
+    los l\xEDmites de tus habilidades actuales, y pierdes una oportunidad de crecimiento
+    masivo."
   FichaToGrant: {fileID: 11400000, guid: 4b311d9f7a694434c9e4ecd82517a71e, type: 2}

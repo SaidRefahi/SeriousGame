@@ -13,4 +13,11 @@ MonoBehaviour:
   m_Name: Decision_M1A
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Cobrar \"en negro\" a trav\xE9s de la billetera virtual."
+  ConsequenceImage: {fileID: 183965438826721213, guid: 18879938e25889a4d92558216ff0b0be, type: 3}
+  ConsequenceText: "Investigas en foros y encuentras una forma de usar el dinero
+    directamente o venderlo en una \"cueva\" digital. Es r\xE1pido y recibes casi
+    todo el monto. Te sientes inteligente, como si hubieras vencido al sistema. Dispones
+    del dinero de forma inmediata y sin descuentos. Sin embargo, no puedes justificar
+    tus ingresos, lo que te impide acceder a un alquiler, un cr\xE9dito o demostrar
+    solvencia. Vives con el riesgo constante de que la AFIP detecte tus movimientos."
   FichaToGrant: {fileID: 11400000, guid: b590d48c7cc72894f89ea5437c4e1312, type: 2}

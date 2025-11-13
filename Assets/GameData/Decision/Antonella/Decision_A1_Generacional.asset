@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
   m_Name: Decision_A1_Generacional
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  DecisionPrompt: Vas a elegir una de las opciones
+  DecisionPrompt: "Est\xE1s en la peque\xF1a bodega familiar en Maip\xFA, junto a
+    tu padre, un hombre de manos curtidas. El sol de la tarde cae sobre los vi\xF1edos.
+    Sostienes una tablet con gr\xE1ficos de an\xE1lisis de acidez y az\xFAcares.
+    T\xFA dices: \"Pap\xE1, seg\xFAn los datos de la facultad, si esperamos 48 horas
+    m\xE1s para cosechar, vamos a tener el punto de madurez polifen\xF3lica perfecto\".
+    Tu padre te mira: \"\xBFDatos? El punto perfecto lo dice la uva cuando la prob\xE1s,
+    como me ense\xF1\xF3 tu abuelo. Eso que aprend\xE9s es pura qu\xEDmica de laboratorio,
+    no es vino\"."
+  BackgroundImage: {fileID: -182713894820414116, guid: c17a858cf892222429a3f50ac73505d1, type: 3}
   Options:
   - {fileID: 11400000, guid: 94450a62e7fb8cd49bab2a1fb09316e9, type: 2}
   - {fileID: 11400000, guid: 90d94b809e3bdad4d81e6d0f783baac7, type: 2}

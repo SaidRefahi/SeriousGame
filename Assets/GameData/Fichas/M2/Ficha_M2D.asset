@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_M2D
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M2D
-  DisplayName: FICHA 4
-  Description: "Buscar un atajo (ex\xE1menes viejos, res\xFAmenes \"milagrosos\")."
+  DisplayName: "La Honestidad como Estrategia de Negociaci\xF3n"
+  Description: "Ser transparente sobre tus debilidades (y tu plan para mejorarlas)
+    no es un signo de incompetencia, es un signo de profesionalismo y autoconocimiento.
+    A menudo genera m\xE1s confianza que fingir perfecci\xF3n."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

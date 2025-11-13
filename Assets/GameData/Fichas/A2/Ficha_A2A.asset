@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A2A
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A2A
-  DisplayName: FICHA 1
-  Description: "Quedarse y hacer la marat\xF3n de estudio."
+  DisplayName: El Valor de la Estructura
+  Description: "Trabajar en un entorno establecido te ense\xF1a procesos, disciplina
+    y c\xF3mo funcionan las grandes organizaciones. Esta experiencia es una base
+    s\xF3lida para cualquier carrera, incluso para futuros emprendimientos."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

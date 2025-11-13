@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Decision_M2D
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Aceptar, pero negociar ser sincero sobre su nivel de ingl\xE9s."
+  ConsequenceImage: {fileID: -6711132418740531039, guid: 551d432390aa18b41928b3f598d42ac0, type: 3}
+  ConsequenceText: "Respondes al cliente: \"Estoy muy interesado. Mis habilidades
+    t\xE9cnicas en Python/SQL son excelentes. Mi ingl\xE9s conversacional es intermedio
+    (B1). Me siento 100% c\xF3modo comunic\xE1ndome por escrito (Slack/Email), pero
+    necesitar\xE9 un poco de paciencia en las reuniones de voz. Estoy empezando un
+    curso para mejorar.\" El cliente valora tu honestidad. Aceptan tu propuesta.
+    Consigues el trabajo, evitas el p\xE1nico de \"fingir\" y puedes enfocarte en
+    hacer bien tu trabajo t\xE9cnico, mientras mejoras tu ingl\xE9s a tu propio ritmo."
   FichaToGrant: {fileID: 11400000, guid: fb4a44fdd2c4c574ba84acbe01d4346b, type: 2}

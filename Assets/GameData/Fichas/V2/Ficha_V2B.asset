@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_V2B
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: V2B
-  DisplayName: FICHA 2
-  Description: Salir 3 horas para despejarse y mantener su red de apoyo.
+  DisplayName: La Independencia y su Precio
+  Description: "La independencia econ\xF3mica es una fuente de poder y tranquilidad,
+    pero a menudo requiere sacrificar otros recursos valiosos, como el tiempo libre
+    o la energ\xEDa mental. El balance es un acto constante."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
   m_Name: Decision_M3A
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
-  OptionText: Seguir ahorrando y trabajando desde casa (optimizar rentabilidad).
+  OptionText: "[Opci\xF3n A] Seguir ahorrando y trabajando desde casa (optimizar
+    rentabilidad)."
+  ConsequenceImage: {fileID: 6063042941403784513, guid: 7edb5bd692f6f1c40941cb2b838a26fe, type: 3}
+  ConsequenceText: "Decides que el coworking es un gasto innecesario. Sigues trabajando
+    solo. Tu productividad y tus ahorros crecen, pero tu sensaci\xF3n de aislamiento
+    tambi\xE9n. Empieza a costarte diferenciar los d\xEDas de semana de los fines
+    de semana. Tu mundo se encoge al tama\xF1o de tu habitaci\xF3n. Maximizas tus
+    ganancias y mantienes un bajo costo de vida. Sin embargo, tu salud mental se
+    deteriora por el aislamiento, y pierdes la oportunidad de crear una red de contactos
+    profesionales en tu propia ciudad."
   FichaToGrant: {fileID: 11400000, guid: 63962c4e36c9479408cd7d581f21636b, type: 2}

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A2C
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A2C
-  DisplayName: FICHA 3
-  Description: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
+  DisplayName: "El Mito del Multitasking Estrat\xE9gico"
+  Description: "Hacer dos cosas a la vez no es ser productivo, es dividir tu atenci\xF3n.
+    Especialmente al iniciar dos proyectos nuevos (un trabajo y un emprendimiento),
+    ambos requieren el 100% de tu foco."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

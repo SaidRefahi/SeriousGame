@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: Intentar "pilotearla" sin gastar (ir a la biblioteca, pedir prestado).
   ConsequenceImage: {fileID: 3383617550922596140, guid: 28b725cb264d42940aad32d49aa6a22d, type: 3}
-  ConsequenceText: "No gasta un peso y no pide dinero. Sin embargo, el costo log\xEDstico
-    y de tiempo es alt\xEDsimo. El estr\xE9s de coordinar, la ineficiencia de estudiar
-    en la biblioteca y la incomodidad la dejan igual de agotada que si hubiera trabajado,
-    pero sin resolver el problema de ra\xEDz."
+  ConsequenceText: "Decides no gastar. Intentas depender de tus compa\xF1eras: pides
+    el cargador prestado \"solo para cargarla un ratito\", ajustando tus horarios
+    a los de otra persona. Para el apunte, vas a la biblioteca de la facultad, pero
+    el libro que necesita solo puede consultarse en sala. Pasas horas en una silla
+    inc\xF3moda tomando notas a mano. No gastas un peso, pero el costo log\xEDstico
+    y de tiempo es alt\xEDsimo. El estr\xE9s y la ineficiencia te dejan igual de
+    agotada, pero sin resolver el problema de ra\xEDz (sigues sin cargador)."
   FichaToGrant: {fileID: 11400000, guid: 3ee296f5bbc915c43ac17641d59a2cf7, type: 2}

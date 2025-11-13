@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Buscar un atajo (ex\xE1menes viejos, res\xFAmenes \"milagrosos\")."
   ConsequenceImage: {fileID: -4826616964816771487, guid: 4639086376ce8fe44b75725e269d3538, type: 3}
-  ConsequenceText: "El \"examen modelo\" estaba desactualizado. El examen real es
-    completamente diferente. Aprueba, pero con lo justo (un 4), quedando en la cuerda
-    floja para el resto del a\xF1o. Gast\xF3 todo su tiempo apostando a una sola
-    carta en lugar de construir una base s\xF3lida."
+  ConsequenceText: "Decides que estudiar todo es imposible. Ignoras a tus amigas
+    y dedicas la noche del viernes a buscar en grupos de WhatsApp \"ex\xE1menes filtrados\"
+    o res\xFAmenes de \xFAltima hora. Encuentras un supuesto \"examen modelo\" y
+    basas todo tu estudio del fin de semana en eso. El \"examen modelo\" estaba desactualizado.
+    El examen real es completamente diferente. Apruebas, pero con lo justo (un 4),
+    quedando en la cuerda floja para el resto del a\xF1o."
   FichaToGrant: {fileID: 11400000, guid: 58b34241499732f41b61cb0276dc4d07, type: 2}

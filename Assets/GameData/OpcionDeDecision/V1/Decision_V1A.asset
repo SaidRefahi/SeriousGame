@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Quedarse y hacer la marat\xF3n de estudio."
   ConsequenceImage: {fileID: -3284453885332563138, guid: cba622d005dde2940aaa46acb642256a, type: 3}
-  ConsequenceText: "Aprueba con nota excelente. Siente alivio, pero el costo es un
-    agotamiento f\xEDsico y mental que le dura toda la semana siguiente, afectando
-    su rendimiento en otras materias."
+  ConsequenceText: "Respondes al chat con una disculpa y apagas el tel\xE9fono. Ves
+    pasar el fin de semana en un montaje de tazas de caf\xE9 acumuladas y resaltadores.
+    El domingo por la noche est\xE1s al borde del colapso, pero has repasado todo.
+    Entras al examen con una seguridad producto del agotamiento. Apruebas con nota
+    excelente. Sientes alivio, pero el costo es un agotamiento f\xEDsico y mental
+    que te dura toda la semana siguiente, afectando tu rendimiento en otras materias."
   FichaToGrant: {fileID: 11400000, guid: da43877ba201e914ea19d67c43810c77, type: 2}

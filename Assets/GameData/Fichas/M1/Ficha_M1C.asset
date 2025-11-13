@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_M1C
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M1C
-  DisplayName: FICHA 3
-  Description: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
+  DisplayName: "La Falsa Seguridad de la 'V\xEDa Gris'"
+  Description: "Cumplir 'un poquito' con el sistema rara vez te da los beneficios
+    de cumplir por completo. Tienes los costos de la formalidad (contador) pero ninguno
+    de sus beneficios reales (cr\xE9dito, solvencia)."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

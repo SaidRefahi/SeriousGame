@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: Decision_A2A
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Aceptar la pasant\xEDa (experiencia t\xE9cnica, dinero seguro)."
+  ConsequenceImage: {fileID: -4460006743214545304, guid: b9651fec64740e549987c238989c26d6, type: 3}
+  ConsequenceText: "Aceptas la pasant\xEDa. Aprendes enormemente en el laboratorio,
+    haces contactos valiosos en la industria y el dinero que ganas ayuda a la econom\xEDa
+    familiar. Te sientes profesional y competente. Adquieres habilidades t\xE9cnicas
+    de alto nivel y experiencia corporativa. Sin embargo, el negocio familiar no
+    evoluciona y sigue vulnerable a los precios del mercado."
   FichaToGrant: {fileID: 11400000, guid: 6c11c1e10cf4fd94aa55fa5077d6a626, type: 2}

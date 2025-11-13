@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A1B
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A1B
-  DisplayName: FICHA 2
-  Description: Salir 3 horas para despejarse y mantener su red de apoyo.
+  DisplayName: El Riesgo de Innovar en Casa
+  Description: Introducir nuevas ideas en un entorno familiar y tradicional puede
+    generar conflicto. A veces, la mejor manera de convencer no es con palabras,
+    sino con resultados demostrables.
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

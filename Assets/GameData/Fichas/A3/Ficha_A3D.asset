@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A3D
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A3D
-  DisplayName: FICHA 4
-  Description: "Buscar un atajo (ex\xE1menes viejos, res\xFAmenes \"milagrosos\")."
+  DisplayName: "La Tiran\xEDa de la Gesti\xF3n Remota"
+  Description: "Hay negocios (especialmente los f\xEDsicos y familiares) que no se
+    pueden gestionar por Zoom. La presencia f\xEDsica, la confianza y la toma de
+    decisiones 'en el terreno' son insustituibles."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

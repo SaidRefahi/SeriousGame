@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A3A
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A3A
-  DisplayName: FICHA 1
-  Description: "Quedarse y hacer la marat\xF3n de estudio."
+  DisplayName: Construir tu CV vs. Construir tu Legado
+  Description: "A veces, el camino que fortalece tu curriculum y tu carrera individual
+    te aleja de la oportunidad de construir o mantener un legado familiar. Es una
+    elecci\xF3n entre el crecimiento personal y la responsabilidad hacia tus ra\xEDces."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

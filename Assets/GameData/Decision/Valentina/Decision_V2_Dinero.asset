@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
   m_Name: Decision_V2_Dinero
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  DecisionPrompt: "Habitaci\xF3n de Valentina. La notebook con pantalla en negro.
-    El cargador no funciona. Mensaje en el grupo de la facultad: \"El apunte de Histolog\xEDa
-    ya est\xE1... aument\xF3, ahora sale $XXXX.\"\r\nNarrador: \"Era d\xEDa 20. El
-    dinero estaba calculado al centavo... El cargador roto y el apunte no eran un
-    gasto\u2014eran una crisis. La idea de volver a llamar a casa le generaba una
-    culpa que le oprim\xEDa el pecho."
+  DecisionPrompt: "Es d\xEDa 20 del mes. El dinero que te mandaron tus padres est\xE1
+    calculado al centavo para la pensi\xF3n y la comida. De repente, el cargador
+    de tu notebook deja de funcionar. La pantalla se pone en negro. Al mismo tiempo,
+    te llega un email de la facultad: el profesor de Histolog\xEDa acaba de anunciar
+    que la licencia para el nuevo software de simulaci\xF3n de tejidos 3D es OBLIGATORIA
+    para aprobar los pr\xE1cticos. La licencia con descuento estudiantil cuesta $50.000.
+    El cargador roto y el software imprevisto no son un gasto, son una crisis. La
+    idea de volver a llamar a casa te da una culpa que te oprime el pecho."
   BackgroundImage: {fileID: -6543713957166017575, guid: 2dc00b8a36fe2cf4f9e555041998097b, type: 3}
   Options:
   - {fileID: 11400000, guid: a429fb2e6f6ad39469be2a1c548a8c34, type: 2}

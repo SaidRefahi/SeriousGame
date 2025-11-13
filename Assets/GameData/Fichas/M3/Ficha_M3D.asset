@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_M3D
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M3D
-  DisplayName: FICHA 4
-  Description: "Buscar un atajo (ex\xE1menes viejos, res\xFAmenes \"milagrosos\")."
+  DisplayName: "El S\xEDndrome del Impostor y la Validaci\xF3n Externa"
+  Description: "El s\xEDndrome del impostor rara vez se cura con otra certificaci\xF3n.
+    Es un problema de validaci\xF3n interna. Buscar un t\xEDtulo para 'sentirte'
+    profesional puede ser una trampa que te cuesta tiempo y dinero."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

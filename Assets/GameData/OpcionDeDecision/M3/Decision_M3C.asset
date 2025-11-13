@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
   m_Name: Decision_M3C
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
-  OptionText: Buscar una red de contactos puramente virtual (Discords, foros).
+  OptionText: "[OPCI\xD3N C] Buscar una red de contactos puramente virtual (Discords,
+    foros)."
+  ConsequenceImage: {fileID: -817021999775527378, guid: a3e92c11deaea1c4ab2c5d7d0a115a02, type: 3}
+  ConsequenceText: "Decides que el problema es la soledad, pero no quieres gastar
+    en un coworking. Buscas activamente comunidades online: te unes a servidores
+    de Discord de programadores, pagas la suscripci\xF3n a un foro premium y asistes
+    a meetups virtuales. Resuelves parcialmente el aislamiento profesional. Encuentras
+    gente con quien hablar de c\xF3digo. Sin embargo, no resuelves tu aislamiento
+    social f\xEDsico. Sigues sin \"colegas\" con quienes tomar un caf\xE9, y tu s\xEDndrome
+    del impostor no mejora."
   FichaToGrant: {fileID: 11400000, guid: 1f8abb07c4e04c04ca9e67166bb1dac9, type: 2}

@@ -13,4 +13,11 @@ MonoBehaviour:
   m_Name: Decision_A3A
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Irse a Francia (cumplir sue\xF1o profesional, perder legado)."
+  ConsequenceImage: {fileID: 6063042941403784513, guid: 57615b1aca9e9d24f99b4f1376478cfa, type: 3}
+  ConsequenceText: "Con el coraz\xF3n roto pero decidida, te despides de tu familia
+    y viajas a Francia. La experiencia es incre\xEDble: aprendes de los mejores del
+    mundo y tu CV se vuelve internacionalmente competitivo. Mantienes el contacto
+    por videollamada y te enteras de que tu padre finalmente vendi\xF3 la finca a
+    una bodega grande. Alcanzas la cima de tu desarrollo profesional, pero pierdes
+    el legado familiar y la conexi\xF3n f\xEDsica con tus ra\xEDces."
   FichaToGrant: {fileID: 11400000, guid: 6e7e20b0a7cc81d4f99653219c3bbc1a, type: 2}

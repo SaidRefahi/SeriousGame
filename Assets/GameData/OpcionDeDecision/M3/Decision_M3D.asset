@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
   m_Name: Decision_M3D
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
-  OptionText: "Inscribirse en una carrera universitaria formal para combatir el \"s\xEDndrome
-    del impostor\"."
+  OptionText: "[OPCI\xD3N D] Inscribirse en una carrera universitaria formal para
+    combatir el \"s\xEDndrome del impostor\"."
+  ConsequenceImage: {fileID: -3551455047637153126, guid: 984c9b5741ac36f4c83f295c93b6a558, type: 3}
+  ConsequenceText: "Decides que la ra\xEDz de tu problema es el \"s\xEDndrome del
+    impostor\" por no tener t\xEDtulo. Usas tus ganancias para matricularte en una
+    Tecnicatura en Programaci\xF3n (virtual) para \"validar\" tu conocimiento. El
+    t\xEDtulo te da un papel que calma tu ansiedad. Sin embargo, ahora tienes que
+    dividir tu tiempo entre tu trabajo (que paga bien) y la cursada (que te ense\xF1a
+    cosas que, en su mayor\xEDa, ya sabes). Tu estr\xE9s aumenta, tu tiempo libre
+    desaparece y sigues estando igual de solo que antes."
   FichaToGrant: {fileID: 11400000, guid: af91124c540c2a64aa902ea5ff8e77e0, type: 2}

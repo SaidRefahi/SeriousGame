@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_V3C
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: V3C
-  DisplayName: FICHA 3
-  Description: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
+  DisplayName: "La Pausa Estrat\xE9gica"
+  Description: "A veces, parar no es rendirse, es tomar aire. Salir de la 'rueda
+    de h\xE1mster' te da perspectiva para tomar decisiones que no est\xE1n basadas
+    en el agotamiento."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

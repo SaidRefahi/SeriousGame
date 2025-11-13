@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Pedirle dinero prestado a una compa\xF1era de la pensi\xF3n."
   ConsequenceImage: {fileID: 3328179410973535268, guid: a2afe3c26ebcbb44ba53156fa0c75f86, type: 3}
-  ConsequenceText: "Resuelve el problema con la misma rapidez que la Opci\xF3n A,
-    pero sin la culpa familiar. Sin embargo, la din\xE1mica en la pensi\xF3n cambia.
-    Se siente en deuda, evita a su amiga inconscientemente y dice \"s\xED\" a favores
-    que normalmente no har\xEDa. La deuda monetaria se transforma en una deuda social
-    que tensa su red de apoyo."
+  ConsequenceText: "Con verg\xFCenza, le pides prestado a tu amiga de la pensi\xF3n,
+    la que tiene una situaci\xF3n econ\xF3mica m\xE1s holgada. Accede sin problema.
+    Resuelves el problema con la misma rapidez que si llamabas a casa, pero sin la
+    culpa familiar. Sin embargo, la din\xE1mica en la pensi\xF3n cambia. Te sientes
+    en deuda, evitas a tu amiga inconscientemente y dices \"s\xED\" a favores que
+    normalmente no har\xEDas. La deuda monetaria se transforma en una deuda social."
   FichaToGrant: {fileID: 11400000, guid: 4112dd7b302e3c941af1a2ffbe50ebd2, type: 2}

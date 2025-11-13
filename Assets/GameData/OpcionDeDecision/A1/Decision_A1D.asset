@@ -13,4 +13,11 @@ MonoBehaviour:
   m_Name: Decision_A1D
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Buscar un aliado (su madre o su t\xEDo) para que interceda."
+  ConsequenceImage: {fileID: 6386771822558972017, guid: 5e84dae9bd906e8488e390ff406bce97, type: 3}
+  ConsequenceText: "Sabiendo que tu padre es terco, hablas primero con tu madre.
+    Le explicas la idea y el beneficio. La madre, que lleva las cuentas, entiende
+    el potencial. En la cena, ella saca el tema sutilmente: \"Jos\xE9, \xBFy si probamos
+    eso que dice la nena en una esquinita...?\" Tu padre, al escucharlo de ella,
+    cede m\xE1s f\xE1cil. Acuerdan hacer la prueba de forma abierta. El costo es
+    que tuviste que \"ceder\" el cr\xE9dito de la idea a tu madre."
   FichaToGrant: {fileID: 11400000, guid: f6e81d77acd80074b94d627dc3a47c89, type: 2}

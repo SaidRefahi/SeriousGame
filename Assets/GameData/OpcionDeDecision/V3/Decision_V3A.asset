@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Seguir en Medicina, aferr\xE1ndose al sue\xF1o original."
   ConsequenceImage: {fileID: -988914803692160239, guid: d89c3186d2e6fb54693120cb89c1cb4b, type: 3}
-  ConsequenceText: "Afronta un camino de sacrificio a largo plazo. Desarrolla una
-    resiliencia extraordinaria. Se mantiene fiel a su vocaci\xF3n original, aceptando
-    el alto costo."
+  ConsequenceText: "Respiras hondo y decides redoblar la apuesta. Te inscribes en
+    segundo a\xF1o y usas el verano para prepararte mejor. Afrontas un camino de
+    sacrificio a largo plazo, lleno de incertidumbre. Al perseverar, desarrollas
+    una resiliencia extraordinaria y te mantienes fiel a tu vocaci\xF3n original,
+    aceptando el alto costo."
   FichaToGrant: {fileID: 11400000, guid: 6e7e20b0a7cc81d4f99653219c3bbc1a, type: 2}

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_M2C
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M2C
-  DisplayName: FICHA 3
-  Description: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
+  DisplayName: La Deuda de Confianza
+  Description: "La confianza profesional tarda meses en construirse y segundos en
+    destruirse. Una mentira sobre tus habilidades (incluso una 'blanda') puede invalidar
+    toda tu pericia t\xE9cnica."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_M1A
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M1A
-  DisplayName: FICHA 1
-  Description: "Quedarse y hacer la marat\xF3n de estudio."
+  DisplayName: "La Trampa de la Ganancia R\xE1pida"
+  Description: "La informalidad ofrece la tentaci\xF3n de la ganancia inmediata y
+    sin deducciones, pero te deja fuera del sistema. Es un camino r\xE1pido que a
+    menudo te encierra en un callej\xF3n sin salida a largo plazo."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

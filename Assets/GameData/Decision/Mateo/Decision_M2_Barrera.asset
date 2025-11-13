@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
   m_Name: Decision_M2_Barrera
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  DecisionPrompt: 
+  DecisionPrompt: "Revisas tu email. Tienes una oferta para un proyecto a largo plazo,
+    interesante y bien pagado: analizar datos para una app de bodegas de Mendoza.
+    Lees los requisitos y tu coraz\xF3n se acelera. Requisito en pantalla: \"Weekly
+    team meeting, all in English.\" Te sientes un experto en Python y SQL. Podr\xEDas
+    hacer el trabajo t\xE9cnico con los ojos cerrados. Pero \xBFhablar en ingl\xE9s?
+    \xBFEn una reuni\xF3n de equipo? El p\xE1nico es total. Tu habilidad 'dura' te
+    abri\xF3 la puerta, pero tu habilidad 'blanda' te la est\xE1 cerrando en la cara."
+  BackgroundImage: {fileID: -6185584025943451330, guid: 46ce3a8bc4119854d8217a4b025db8aa, type: 3}
   Options:
   - {fileID: 11400000, guid: aafeb5cea4b01a84b9c19ac24193748c, type: 2}
   - {fileID: 11400000, guid: 9a4e382ff834bf84d9b0f79c81e42de1, type: 2}

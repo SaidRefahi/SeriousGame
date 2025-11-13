@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_V2C
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: V2C
-  DisplayName: FICHA 3
-  Description: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
+  DisplayName: El Costo Oculto de lo 'Gratis'
+  Description: "A veces, la soluci\xF3n 'gratis' es la m\xE1s cara en t\xE9rminos
+    de tiempo, energ\xEDa y estr\xE9s. El recurso m\xE1s escaso de un estudiante
+    no siempre es el dinero, sino el tiempo de estudio de calidad."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

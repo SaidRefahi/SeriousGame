@@ -15,7 +15,9 @@ MonoBehaviour:
   OptionText: "Seguir en Medicina, pero buscar una certificaci\xF3n t\xE9cnica corta
     en paralelo."
   ConsequenceImage: {fileID: 6151387977099964788, guid: 7725475b0210a7f41ad612585157d566, type: 3}
-  ConsequenceText: "Su carga de estudio, que ya era alta, se vuelve insostenible.
-    Termina agotada y rindiendo mal en ambas cosas. El intento de tener un \"Plan
-    B\" termina saboteando al \"Plan A\" por falta de foco y energ\xEDa."
+  ConsequenceText: "Decides seguir en Medicina, pero la idea de una salida laboral
+    r\xE1pida te atrae. Te inscribes en un curso corto de fin de semana (ej. Extraccionista).
+    Tu carga de estudio, que ya era alta, se vuelve insostenible. Terminas agotada
+    y rindiendo mal en ambas cosas. El intento de tener un \"Plan B\" termina saboteando
+    al \"Plan A\" por falta de foco y energ\xEDa."
   FichaToGrant: {fileID: 11400000, guid: 81f0a0a200523d34eba4f3e17a7d92a2, type: 2}

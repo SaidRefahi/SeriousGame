@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
   ConsequenceImage: {fileID: -5503298330688170237, guid: 82ddc935e5e5d044da135e1efc86bfd1, type: 3}
-  ConsequenceText: "Llega al lunes habiendo estudiado la mitad, pero sin haber descansado.
-    El resultado es un desastre: desaprueba el filtro. No solo no avanz\xF3, sino
-    que el tiempo se consumi\xF3 en ansiedad y evasi\xF3n, siendo el peor de los
-    escenarios."
+  ConsequenceText: "Intentas sentarte a estudiar. Lees el mismo p\xE1rrafo cuatro
+    veces. La ansiedad es tan grande que no puedes concentrarte. Para \"descansar
+    5 minutos\", abres Instagram. Esos 5 minutos se convierten en 4 horas de scrolling
+    y un cap\xEDtulo de una serie. Te despiertas el s\xE1bado a mediod\xEDa sobre
+    los apuntes, sintiendo una culpa y p\xE1nico inmensos. Llegas al lunes habiendo
+    estudiado la mitad, pero sin haber descansado. El resultado es un desastre: desapruebas
+    el filtro. Es el peor de los escenarios."
   FichaToGrant: {fileID: 11400000, guid: 7c6d45c05b5980b4a8d922158c06b301, type: 2}

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A2D
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A2D
-  DisplayName: FICHA 4
-  Description: "Buscar un atajo (ex\xE1menes viejos, res\xFAmenes \"milagrosos\")."
+  DisplayName: "La Paciencia Estrat\xE9gica"
+  Description: No siempre hay que elegir la primera gran oportunidad. A veces es
+    mejor rechazar una buena oferta para esperar (y buscar activamente) la oferta
+    correcta que se alinea perfectamente con tus objetivos de aprendizaje.
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

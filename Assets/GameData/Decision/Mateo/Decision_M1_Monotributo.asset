@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
   m_Name: Decision_M1_Monotributo
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  DecisionPrompt: Vas a elegir una de las opciones
+  DecisionPrompt: "Est\xE1s en tu habitaci\xF3n en Guaymall\xE9n. Es de noche, la
+    \xFAnica luz es la del monitor. En la pantalla, un chat de una plataforma de
+    freelancers con un cliente de Estados Unidos: \"Great job, Mateo! We're sending
+    the 500 USD to your virtual wallet.\" 500 d\xF3lares. M\xE1s de lo que gana tu
+    padre en un mes. El dinero est\xE1 ah\xED, a un clic. Pero una pregunta te carcome:
+    \xBFY ahora qu\xE9? \xBFC\xF3mo se 'blanquea' eso? La formalidad se siente como
+    un laberinto."
+  BackgroundImage: {fileID: -182713894820414116, guid: 0155ecee438fbe84f86b1ceafc57b2c6, type: 3}
   Options:
   - {fileID: 11400000, guid: d76c323e41b09184a94e9703fcdac610, type: 2}
   - {fileID: 11400000, guid: 3e2d54459c656634696342418fd4822e, type: 2}

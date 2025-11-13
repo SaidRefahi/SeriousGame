@@ -13,4 +13,11 @@ MonoBehaviour:
   m_Name: Decision_A1B
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Usar ahorros para hacer una peque\xF1a partida experimental a escondidas."
+  ConsequenceImage: {fileID: 1447814592492169564, guid: 1980fa5eaba7be544847cb09214c38f8, type: 3}
+  ConsequenceText: "Cosechas la mayor parte del vi\xF1edo con tu padre, pero separas
+    unas pocas hileras. A escondidas, usas tus ahorros para un kit de an\xE1lisis
+    y cosechas esas uvas dos d\xEDas despu\xE9s. Meses despu\xE9s, le das a probar
+    a tu padre los dos vinos a ciegas. \xC9l, a rega\xF1adientes, admite que el vino
+    experimental tiene una calidad superior. Es un momento de quiebre que te abre
+    la puerta para innovar."
   FichaToGrant: {fileID: 11400000, guid: 6f0339c2ccae623499e03be42782568b, type: 2}

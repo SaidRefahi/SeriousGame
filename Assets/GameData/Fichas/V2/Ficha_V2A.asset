@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_V2A
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: V2A
-  DisplayName: FICHA 1
-  Description: "Quedarse y hacer la marat\xF3n de estudio."
+  DisplayName: La Deuda Emocional
+  Description: "Aceptar ayuda, especialmente de la familia, es un acto de humildad
+    y necesidad. Sin embargo, a menudo viene con una 'deuda emocional' de culpa o
+    presi\xF3n que tambi\xE9n debe gestionarse para que no afecte tu rendimiento."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

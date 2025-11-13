@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Ficha_M3B
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M3B
-  DisplayName: FICHA 2
-  Description: Salir 3 horas para despejarse y mantener su red de apoyo.
+  DisplayName: "El Networking como Inversi\xF3n Social"
+  Description: "Invertir tiempo y dinero en construir una red de contactos no es
+    un 'gasto', es una inversi\xF3n. Las oportunidades, soluciones y colaboraciones
+    que surgen de una red profesional s\xF3lida a menudo superan con creces el costo
+    inicial."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A3C
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A3C
-  DisplayName: FICHA 3
-  Description: Intentar estudiar, pero verse superada por la ansiedad y procrastinar.
+  DisplayName: "La Ilusi\xF3n del Control a Corto Plazo"
+  Description: "Creer que puedes transformar un negocio familiar en 12 meses es optimista.
+    Los cambios culturales y estructurales profundos llevan a\xF1os. A veces, una
+    soluci\xF3n 'a medias' es lo \xFAnico posible."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
   m_Name: Decision_A3_ElArraigo
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  DecisionPrompt: 
+  DecisionPrompt: "Est\xE1s reci\xE9n recibida, en el patio de tu casa con dos documentos
+    en la mano. Documento 1: Una carta impresa con el logo de una universidad de
+    Burdeos, Francia, confirm\xE1ndote una prestigiosa beca para un posgrado. Tu
+    sue\xF1o. Documento 2: Un borrador de contrato de venta para la finca familiar.
+    El futuro ha llegado en una encrucijada imposible. Tu padre, cansado, te dijo:
+    \"Si no segu\xEDs vos, yo bajo los brazos\"."
+  BackgroundImage: {fileID: 5065051081347183668, guid: d6ad8cc9fec833b448391dd5089efca8, type: 3}
   Options:
   - {fileID: 11400000, guid: c7964313a125add43b69587b211d0c3e, type: 2}
   - {fileID: 11400000, guid: a2a68c3f017565f4ab93e9c4bc932341, type: 2}

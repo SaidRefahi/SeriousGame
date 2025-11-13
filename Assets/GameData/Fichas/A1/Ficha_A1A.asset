@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A1A
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A1A
-  DisplayName: FICHA 1
-  Description: "Quedarse y hacer la marat\xF3n de estudio."
+  DisplayName: "El Peso de la Tradici\xF3n"
+  Description: "Las pr\xE1cticas heredadas se basan en la sabidur\xEDa acumulada
+    y el respeto a los mayores. A veces, para mantener la armon\xEDa, es necesario
+    ceder y aprender del ritmo de la tradici\xF3n."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

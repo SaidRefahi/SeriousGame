@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e47fc179556a5e4dbcaecf8adf53412, type: 3}
   m_Name: Decision_V1_Filtro
   m_EditorClassIdentifier: Assembly-CSharp::Decision
-  DecisionPrompt: "...El examen de Anatom\xEDa del lunes no era solo una prueba\u2014era
-    'el' filtro... El agotamiento y la ansiedad eran sus compa\xF1eros de estudio
-    m\xE1s constantes.\"\r\nNotificaci\xF3n de amigas: \"Vale, \xA1basta de encerrarte!
-    Vamos a tomar algo en la Ar\xEDstides. \xA1Necesit\xE1s cortar un poco!"
+  DecisionPrompt: "Est\xE1s en tu peque\xF1a habitaci\xF3n en la pensi\xF3n de estudiantes.
+    Tu escritorio est\xE1 abarrotado de libros de anatom\xEDa y apuntes. Es viernes
+    por la noche. El examen de Anatom\xEDa del lunes no es solo una prueba, es 'el'
+    filtro. El agotamiento y la ansiedad son tus compa\xF1eros de estudio m\xE1s
+    constantes. Suena una notificaci\xF3n en tu tel\xE9fono. Es un mensaje de tus
+    amigas: \"\xA1Vale, basta de encerrarte! Vamos a tomar algo en la Ar\xEDstides.
+    \xA1Necesit\xE1s cortar un poco!\""
   BackgroundImage: {fileID: -2045687014714097172, guid: 2525b794e327a44468e87978a58f54b4, type: 3}
   Options:
   - {fileID: 11400000, guid: 0b5d227209bdf0446b1c1774110764fa, type: 2}

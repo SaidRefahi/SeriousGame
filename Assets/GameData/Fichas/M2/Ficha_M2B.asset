@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_M2B
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M2B
-  DisplayName: FICHA 2
-  Description: Salir 3 horas para despejarse y mantener su red de apoyo.
+  DisplayName: 'Aprender a Aprender: La Verdadera Habilidad'
+  Description: "En la nueva econom\xEDa, tu conocimiento t\xE9cnico puede volverse
+    obsoleto, pero tu capacidad para aprender r\xE1pidamente una nueva habilidad
+    (dura o blanda) es el activo m\xE1s valioso que tendr\xE1s."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

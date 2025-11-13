@@ -13,4 +13,11 @@ MonoBehaviour:
   m_Name: Decision_M2B
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Aceptar y pagar un curso intensivo de ingl\xE9s conversacional."
+  ConsequenceImage: {fileID: 2267940524452344551, guid: e0ec4394504e2354b97eba3aa9b82485, type: 3}
+  ConsequenceText: "Con el coraz\xF3n en la boca, aceptas. Inmediatamente, usas parte
+    de tus ahorros para inscribirte en un curso intensivo de ingl\xE9s. La primera
+    reuni\xF3n es aterradora: hablas poco y con errores. Pero perseveras. Pasas por
+    un per\xEDodo inicial de alta ansiedad. Sin embargo, al enfrentar tu miedo, no
+    solo completas el proyecto con \xE9xito, sino que adquieres una habilidad blanda
+    crucial que te abre las puertas a proyectos mucho m\xE1s grandes y mejor pagados."
   FichaToGrant: {fileID: 11400000, guid: 03500669830ad184c8ad74ef43b5a7a2, type: 2}

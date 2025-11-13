@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: Buscar una "changa" de moza de fin de semana, sacrificando descanso.
   ConsequenceImage: {fileID: 7986898828637554505, guid: 1bd7164499d0c6244bd5dfe85c7ae8cf, type: 3}
-  ConsequenceText: "Logra independencia financiera para resolver la crisis, d\xE1ndole
-    autoconfianza. Sin embargo, sacrifica sus \xFAnicas horas de descanso y repaso,
-    comenzando la semana atrasada y exhausta."
+  ConsequenceText: "Recorres la calle Ar\xEDstides y consigues trabajo para el fin
+    de semana. La escena te muestra corriendo con bandejas, lidiando con clientes
+    y terminando el domingo a la madrugada, agotada pero con el dinero en el bolsillo.
+    Logras independencia financiera para resolver la crisis, lo que te da autoconfianza.
+    Sin embargo, sacrificas tus \xFAnicas horas de descanso y repaso, comenzando
+    la semana atrasada y exhausta."
   FichaToGrant: {fileID: 11400000, guid: 332a7d9387fe9724ea11604862abdafe, type: 2}

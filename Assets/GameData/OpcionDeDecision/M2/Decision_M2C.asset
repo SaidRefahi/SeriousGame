@@ -13,4 +13,11 @@ MonoBehaviour:
   m_Name: Decision_M2C
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: Aceptar y "fingir" (usar Google Translate en vivo, guiones).
+  ConsequenceImage: {fileID: 5474673720442259343, guid: 1a1f71cf70cce4d42bd20a9403879a31, type: 3}
+  ConsequenceText: "Aceptas el proyecto mintiendo sobre tu fluidez. Te preparas para
+    la primera reuni\xF3n escribiendo guiones de lo que crees que dir\xE1s. Durante
+    la reuni\xF3n, tienes Google Translate abierto en otra ventana. La reuni\xF3n
+    es un desastre. Cuando te hacen una pregunta que no estaba en tu guion, entras
+    en p\xE1nico y tu \"truco\" se vuelve evidente. El cliente pierde la confianza
+    en ti. Te sacan del proyecto a la semana, da\xF1ando tu reputaci\xF3n."
   FichaToGrant: {fileID: 11400000, guid: 027974282a45bda448cd4ab3580c4f94, type: 2}

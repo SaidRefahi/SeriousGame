@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Decision_A2C
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Intentar hacer las dos cosas (pasant\xEDa y turismo en paralelo)."
+  ConsequenceImage: {fileID: 5474673720442259343, guid: df333527d82c4c94ca811accc1b1ca9e, type: 3}
+  ConsequenceText: "Aceptas la pasant\xEDa (Lunes a Viernes, 6 horas) y decides usar
+    las tardes y el fin de semana para lanzar el proyecto tur\xEDstico. Te la pasas
+    corriendo del laboratorio a la finca, contestando emails de la pasant\xEDa mientras
+    recibes turistas. El resultado es la mediocridad en ambas \xE1reas. En la pasant\xEDa
+    te notan cansada y cometes errores. Con los turistas, llegas tarde o est\xE1s
+    de mal humor. Sufres un burnout a los dos meses. No logras ni el dinero seguro
+    ni el \xE9xito del emprendimiento."
   FichaToGrant: {fileID: 11400000, guid: ca717738138a5064a9bc8fdfbe2f7a99, type: 2}

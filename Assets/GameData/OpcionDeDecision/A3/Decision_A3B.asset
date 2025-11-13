@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Decision_A3B
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Quedarse y tomar las riendas (salvar legado, perder sue\xF1o)."
+  ConsequenceImage: {fileID: -860629670452403551, guid: 4676c4fcab4581d4fbd33bc255f7ef58, type: 3}
+  ConsequenceText: "Rechazas la beca. La decisi\xF3n es dolorosa. Te arremangas y
+    empiezas a trabajar a tiempo completo en la finca, aplicando todo lo aprendido.
+    Lanzas nuevos vinos, expandes el turismo y modernizas la gesti\xF3n. El negocio,
+    lentamente, empieza a florecer bajo tu liderazgo. Salvas el legado familiar y
+    lo transformas en un negocio pr\xF3spero. Te conviertes en una referente en tu
+    comunidad. Sin embargo, siempre te quedar\xE1 la duda de lo que pudo haber sido
+    si te hubieras ido a Francia."
   FichaToGrant: {fileID: 11400000, guid: 27819428e475b6049ae28f4e6f1e3eba, type: 2}

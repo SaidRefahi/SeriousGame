@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: Decision_A1A
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: Hacerlo al modo tradicional para no generar conflicto.
+  ConsequenceImage: {fileID: 183965438826721213, guid: c14622731394e924bb8402cf8c191a45, type: 3}
+  ConsequenceText: "Para mantener la paz, guardas la tablet y sigues las indicaciones
+    de tu padre. Cosechan y producen el vino como siempre. El resultado es bueno
+    y familiar, pero predecible. Evitas el conflicto familiar y respetas la tradici\xF3n.
+    Sin embargo, pierdes la oportunidad de innovar y sientes la frustraci\xF3n de
+    no poder aplicar lo que aprendes."
   FichaToGrant: {fileID: 11400000, guid: f759b0c708c44594f8e1984bce17c0fe, type: 2}

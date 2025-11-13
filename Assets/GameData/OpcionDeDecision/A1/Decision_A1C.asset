@@ -14,4 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: "Intentar convencerlo con datos y una presentaci\xF3n (la confrontaci\xF3n
     directa)."
+  ConsequenceImage: {fileID: -8194477794327446978, guid: 6f776308d8f5ff74c8947f65b3eee997, type: 3}
+  ConsequenceText: "Decides que no vas a ceder. Preparas una presentaci\xF3n simple
+    en tu notebook con los gr\xE1ficos y los beneficios econ\xF3micos. Te sientas
+    con tu padre e intentas explicarle racionalmente por qu\xE9 tu m\xE9todo es mejor.
+    \xC9l se siente atacado y menospreciado en su propia experiencia. La conversaci\xF3n
+    se convierte en una discusi\xF3n (\"\xA1Vos y esa facultad!\"). La relaci\xF3n
+    se tensa durante semanas. No logras ning\xFAn cambio."
   FichaToGrant: {fileID: 11400000, guid: 50cc1348ca8d8b6478989a4b1871bb25, type: 2}

@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Decision_A3D
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: Irse a Francia, pero intentar gestionar la finca a distancia.
+  ConsequenceImage: {fileID: -3551455047637153126, guid: 3fbc263167a48c747a97cc6f466d1a12, type: 3}
+  ConsequenceText: "Te vas a Francia. Pero intentas gestionar la finca desde all\xE1.
+    Haces videollamadas a las 6 AM (hora de Francia) para hablar con tu padre. Intentas
+    armar el Instagram y gestionar las reservas desde tu notebook en Burdeos. Fracasas
+    en ambos frentes. No disfrutas ni te enfocas en la beca, porque tu mente est\xE1
+    en Mendoza. Y la gesti\xF3n a distancia es un desastre: las decisiones llegan
+    tarde y tu padre se frustra. A los seis meses, vende igual, pero adem\xE1s has
+    arruinado la mitad de tu experiencia en Francia."
   FichaToGrant: {fileID: 11400000, guid: 81f0a0a200523d34eba4f3e17a7d92a2, type: 2}

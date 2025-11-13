@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Decision_M1B
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
   OptionText: Ir a un contador, inscribirse en el monotributo y formalizar.
+  ConsequenceImage: {fileID: 1447814592492169564, guid: 51c3912446f365f499773cbc179ea475, type: 3}
+  ConsequenceText: "Buscas un contador. La escena muestra una reuni\xF3n donde te
+    explican categor\xEDas de monotributo, facturas E de exportaci\xF3n y comisiones
+    bancarias. Es un proceso engorroso. Al final, de los 500 USD, te queda una suma
+    considerablemente menor en tu cuenta bancaria. El proceso es lento y costoso,
+    y tu ganancia neta es menor. Sin embargo, ahora eres un profesional registrado.
+    Puedes emitir facturas, tener aportes jubilatorios y obra social, y construir
+    un historial crediticio. Te sientes como un verdadero profesional."
   FichaToGrant: {fileID: 11400000, guid: ce40765711fce1148852dbc017926295, type: 2}

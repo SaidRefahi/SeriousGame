@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f5ddfe7637a1445a68771de196aafa, type: 3}
   m_Name: Decision_M3B
   m_EditorClassIdentifier: Assembly-CSharp::DecisionOption
-  OptionText: Usar ganancias para alquilar un escritorio en un espacio de coworking.
+  OptionText: "[Opci\xF3n B] Usar ganancias para alquilar un escritorio en un espacio
+    de coworking."
+  ConsequenceImage: {fileID: -860629670452403551, guid: 2ec66178f9e7ed54dbe372cdbb92e19c, type: 3}
+  ConsequenceText: "Decides invertir en tu bienestar. Llegas a un espacio de coworking
+    (como el Polo TIC). El ambiente es vibrante: hay otros programadores, dise\xF1adores,
+    gente tomando caf\xE9. Al principio eres t\xEDmido, pero pronto empiezas a conversar,
+    a compartir problemas t\xE9cnicos y a almorzar con otros profesionales. Tus gastos
+    mensuales aumentan, reduciendo tu ganancia neta. Sin embargo, tu bienestar mental
+    mejora dr\xE1sticamente. Empiezas a construir una red de contactos locales. Un
+    d\xEDa, un dise\xF1ador del coworking te recomienda a un cliente nuevo."
   FichaToGrant: {fileID: 11400000, guid: 7e00e13002dac874f873e45861f7a247, type: 2}

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_V3A
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: V3A
-  DisplayName: FICHA 1
-  Description: "Quedarse y hacer la marat\xF3n de estudio."
+  DisplayName: El Costo Hundido del Esfuerzo
+  Description: "A veces, la decisi\xF3n de seguir adelante se basa en la gran inversi\xF3n
+    que ya hemos hecho. Reconocer esto no es un error, sino una forma de valorar
+    tu propio esfuerzo y perseverar en metas a largo plazo."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

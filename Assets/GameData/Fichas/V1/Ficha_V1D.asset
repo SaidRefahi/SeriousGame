@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_V1D
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: V1D
-  DisplayName: FICHA 4
-  Description: "Buscar un atajo (ex\xE1menes viejos, res\xFAmenes \"milagrosos\")."
+  DisplayName: El Costo del Atajo
+  Description: "Buscar una soluci\xF3n r\xE1pida puede ahorrar tiempo, pero a menudo
+    te deja sin las habilidades o el conocimiento de base. En una carrera de fondo,
+    los atajos del principio son las lagunas del final."
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}

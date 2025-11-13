@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_M1B
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: M1B
-  DisplayName: FICHA 2
-  Description: Salir 3 horas para despejarse y mantener su red de apoyo.
+  DisplayName: Tu Sueldo Bruto no es tu Sueldo Neto
+  Description: El primer gran aprendizaje de la vida profesional es la diferencia
+    entre lo que facturas y lo que realmente te queda en el bolsillo. Entender los
+    impuestos y costos no es opcional es una necesidad.
   Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
