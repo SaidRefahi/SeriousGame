@@ -16,5 +16,5 @@ MonoBehaviour:
   DisplayName: "El Peligro de la Sobre-diversificaci\xF3n"
   Description: "Querer cubrir todas las opciones puede sonar inteligente, pero a
     menudo significa no darle a ninguna la energ\xEDa suficiente para tener \xE9xito.
-    A veces, la mejor estrategia es elegir un camino y quemar las naves."
-  Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    A veces, la mejor estrategia es elegir un camino y ignorar los demas."
+  Icon: {fileID: 21300000, guid: a3b7f4ae4105a4148b36c0eb8f73106c, type: 3}

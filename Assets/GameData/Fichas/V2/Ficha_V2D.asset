@@ -17,4 +17,4 @@ MonoBehaviour:
   Description: "Pedir prestado a pares (amigos, compa\xF1eros) puede ser m\xE1s r\xE1pido,
     pero mezcla las finanzas con la amistad. El dinero se devuelve, pero la sensaci\xF3n
     de deuda puede afectar la din\xE1mica de la relaci\xF3n."
-  Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  Icon: {fileID: 21300000, guid: 3c0ef04fd99b57147ab8b0fd6b37b16e, type: 3}

@@ -17,4 +17,4 @@ MonoBehaviour:
   Description: "Cumplir 'un poquito' con el sistema rara vez te da los beneficios
     de cumplir por completo. Tienes los costos de la formalidad (contador) pero ninguno
     de sus beneficios reales (cr\xE9dito, solvencia)."
-  Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  Icon: {fileID: 21300000, guid: 0d0e80f9315426245b75b4affcf95ab6, type: 3}

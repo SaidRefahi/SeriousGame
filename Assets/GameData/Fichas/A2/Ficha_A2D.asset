@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Ficha_A2D
   m_EditorClassIdentifier: Assembly-CSharp::KnowledgeFicha
   FichaID: A2D
-  DisplayName: "La Paciencia Estrat\xE9gica"
+  DisplayName: La Paciencia
   Description: No siempre hay que elegir la primera gran oportunidad. A veces es
     mejor rechazar una buena oferta para esperar (y buscar activamente) la oferta
     correcta que se alinea perfectamente con tus objetivos de aprendizaje.
-  Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  Icon: {fileID: 21300000, guid: 5de82ea9ca9ccce44a8a94f6b098e27a, type: 3}
