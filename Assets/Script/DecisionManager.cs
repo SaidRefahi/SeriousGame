@@ -1,39 +1,46 @@
-// Archivo: DecisionManager.cs (¡ACTUALIZADO OTRA VEZ!)
+// Archivo: DecisionManager.cs (¡VERSIÓN CORREGIDA!)
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using TMPro; 
-using UnityEngine.SceneManagement; // Para volver al menú
+using TMPro; // <--- ¡Esto ya estaba bien!
+using UnityEngine.SceneManagement; 
 
-/// <summary>
-/// Gestiona la presentación de una decisión, sus opciones Y sus consecuencias.
-/// Oculta el texto narrativo cuando se muestran las opciones.
-/// </summary>
 public class DecisionManager : MonoBehaviour
 {
     private enum DecisionState
     {
         ShowingDilemma,
         ShowingOptions,
-        ShowingConsequence
+        ShowingConsequence,
+        ShowingFicha 
     }
 
     [Header("Gestor de Flujo")]
     [SerializeField] private GameFlowManager gameFlowManager;
     
-    [Header("UI References")]
-    [Tooltip("El objeto 'Scroll View' principal que contiene el texto narrativo.")]
-    [SerializeField] private GameObject scrollTextoNarrativo; // <--- ¡NUEVO!
-
+    [Header("UI Dilema/Consecuencia")]
+    [SerializeField] private GameObject scrollTextoNarrativo;
     [SerializeField] private Image decisionBackgroundImage; 
-    [SerializeField] private TextMeshProUGUI decisionPromptText; // (Este sigue siendo el 'Content' del scroll view)
+    
+    // --- ¡AQUÍ ESTÁ LA CORRECCIÓN! ---
+    [SerializeField] private TextMeshProUGUI decisionPromptText; // (Era TextMeshProUI)
+    // ---------------------------------
+    
     [SerializeField] private GameObject panelOpciones; 
-    [SerializeField] private Button botonSiguiente; 
+    [SerializeField] private Button botonSiguiente; // El botón "Siguiente" principal
     [SerializeField] private List<OptionButton> optionButtons; 
+
+    [Header("UI Ficha Desbloqueada")]
+    [Tooltip("El Panel/Canvas 'padre' que contiene tu prefab de ficha (ej: Panel_FichaGanada).")]
+    [SerializeField] private GameObject panelFichaGanada;
+    [Tooltip("El script 'JournalEntryUI' que está en el prefab que pusiste en la escena.")]
+    [SerializeField] private JournalEntryUI entryUIFichaGanada; // <--- ¡LA CLAVE!
+    [Tooltip("El botón 'Continuar' que está en el panelFichaGanada.")]
+    [SerializeField] private Button botonContinuarFicha;
 
     private Decision currentDecision;
     private DecisionState currentState;
-    private DecisionOption lastChosenOption; 
+    private DecisionOption lastChosenOption;
 
     void Start()
     {
@@ -43,10 +50,22 @@ public class DecisionManager : MonoBehaviour
             return;
         }
 
+        // Configurar los listeners
         if (botonSiguiente != null)
         {
             botonSiguiente.onClick.RemoveAllListeners();
             botonSiguiente.onClick.AddListener(OnBotonSiguienteClicked); 
+        }
+        if (botonContinuarFicha != null)
+        {
+            botonContinuarFicha.onClick.RemoveAllListeners();
+            botonContinuarFicha.onClick.AddListener(OnBotonContinuarFichaClicked);
+        }
+        
+        // Ocultar el panel de ficha al empezar
+        if(panelFichaGanada != null)
+        {
+            panelFichaGanada.SetActive(false);
         }
         
         currentDecision = gameFlowManager.StartingDecision;
@@ -54,19 +73,14 @@ public class DecisionManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Configura la UI para mostrar el DILEMA (Texto + Fondo del Dilema).
+    /// ESTADO 1: Muestra el DILEMA
     /// </summary>
     public void ShowDecision(Decision decision)
     {
-        if (decision == null)
-        {
-            Debug.LogError("Se intentó mostrar una decisión nula.");
-            return;
-        }
-
+        if (decision == null) return;
         currentDecision = decision;
 
-        // 1. Mostrar Texto e Imagen del DILEMA
+        scrollTextoNarrativo.SetActive(true); 
         decisionPromptText.text = currentDecision.DecisionPrompt;
         if (decisionBackgroundImage != null && currentDecision.BackgroundImage != null)
         {
@@ -74,7 +88,6 @@ public class DecisionManager : MonoBehaviour
             decisionBackgroundImage.gameObject.SetActive(true);
         }
 
-        // 2. Configurar los botones de opción (se quedan ocultos)
         for (int i = 0; i < optionButtons.Count; i++)
         {
             if (i < currentDecision.Options.Count && currentDecision.Options[i] != null)
@@ -88,90 +101,127 @@ public class DecisionManager : MonoBehaviour
                 optionButtons[i].gameObject.SetActive(false);
             }
         }
-
-        // 3. Poner la UI en estado "Dilema"
-        if (scrollTextoNarrativo != null)
-        {
-            scrollTextoNarrativo.SetActive(true); // <--- ¡MUESTRA EL TEXTO!
-        }
+        
         panelOpciones.SetActive(false);
+        if(panelFichaGanada != null)
+        {
+            panelFichaGanada.SetActive(false); 
+        }
+        
         botonSiguiente.gameObject.SetActive(true);
         currentState = DecisionState.ShowingDilemma;
     }
 
     /// <summary>
-    /// Muestra las opciones. Se llama desde OnBotonSiguienteClicked.
+    /// ESTADO 2: Muestra las OPCIONES
     /// </summary>
     public void ShowOptions()
     {
-        if (scrollTextoNarrativo != null)
-        {
-            scrollTextoNarrativo.SetActive(false); // <--- ¡OCULTA EL TEXTO!
-        }
+        scrollTextoNarrativo.SetActive(false); 
         panelOpciones.SetActive(true);
         botonSiguiente.gameObject.SetActive(false);
         currentState = DecisionState.ShowingOptions;
     }
 
     /// <summary>
-    /// Se llama desde OptionButton cuando el jugador elige una opción.
-    /// AHORA MUESTRA LA CONSECUENCIA.
+    /// ESTADO 3: Muestra la CONSECUENCIA
     /// </summary>
     public void OnOptionSelected(DecisionOption chosenOption)
     {
         lastChosenOption = chosenOption; 
-
-        // 1. Ocultar panel de opciones
         panelOpciones.SetActive(false);
-
-        // 2. Mostrar Texto e Imagen de la CONSECUENCIA
+        scrollTextoNarrativo.SetActive(true); 
         decisionPromptText.text = chosenOption.ConsequenceText;
         if (decisionBackgroundImage != null && chosenOption.ConsequenceImage != null)
         {
             decisionBackgroundImage.sprite = chosenOption.ConsequenceImage;
             decisionBackgroundImage.gameObject.SetActive(true);
         }
-
-        // 3. Mostrar el botón "Siguiente", el texto, y cambiar de estado
-        if (scrollTextoNarrativo != null)
-        {
-            scrollTextoNarrativo.SetActive(true); // <--- ¡MUESTRA EL TEXTO DE NUEVO!
-        }
         botonSiguiente.gameObject.SetActive(true);
         currentState = DecisionState.ShowingConsequence;
     }
+    
+    /// <summary>
+    /// ESTADO 4: Muestra la FICHA GANADA
+    /// </summary>
+    public void ShowFicha()
+    {
+        KnowledgeFicha ficha = lastChosenOption.FichaToGrant;
+
+        if (ficha == null)
+        {
+            ShowNextDilemmaOrEnd();
+            return;
+        }
+
+        // Ocultar la UI del dilema/consecuencia
+        scrollTextoNarrativo.SetActive(false);
+        botonSiguiente.gameObject.SetActive(false);
+
+        // --- ¡Lógica de Prefab Pre-colocado! ---
+        if (entryUIFichaGanada != null)
+        {
+            // ¡Simplemente le pasamos los datos!
+            entryUIFichaGanada.Setup(ficha);
+        }
+        else
+        {
+            Debug.LogError("¡No hay referencia a 'entryUIFichaGanada' en el DecisionManager!");
+        }
+        // -------------------------------------
+
+        // Mostrar el panel "contenedor"
+        panelFichaGanada.SetActive(true);
+        currentState = DecisionState.ShowingFicha;
+    }
 
     /// <summary>
-    /// Esta ÚNICA función maneja el botón "Siguiente".
-    /// Decide qué hacer basándose en el estado actual.
+    /// Maneja el clic en el botón "Siguiente" principal
     /// </summary>
     public void OnBotonSiguienteClicked()
     {
         if (currentState == DecisionState.ShowingDilemma)
         {
-            // Estábamos viendo el dilema, ahora mostramos las opciones.
             ShowOptions();
         }
         else if (currentState == DecisionState.ShowingConsequence)
         {
-            // Estábamos viendo la consecuencia, ahora pasamos al siguiente dilema.
-            Decision next = currentDecision.NextDecision;
-            
-            if (next != null)
-            {
-                ShowDecision(next);
-            }
-            else
-            {
-                Debug.Log("Fin de la cadena de decisiones. Volviendo al menú.");
-                GoToMenu();
-            }
+            ShowFicha();
         }
+    }
+    
+    /// <summary>
+    /// Maneja el clic en el botón "Continuar" DEL PANEL DE FICHA
+    /// </summary>
+    public void OnBotonContinuarFichaClicked()
+    {
+        if (currentState != DecisionState.ShowingFicha) return;
+        
+        // Ocultar el panel
+        panelFichaGanada.SetActive(false);
+        
+        // ¡Ya no hay que destruir nada!
+        ShowNextDilemmaOrEnd();
     }
 
     /// <summary>
-    /// Vuelve al menú principal.
+    /// Decide si cargar el próximo dilema o volver al menú
     /// </summary>
+    private void ShowNextDilemmaOrEnd()
+    {
+        Decision next = currentDecision.NextDecision;
+        
+        if (next != null)
+        {
+            ShowDecision(next); // Carga el siguiente dilema
+        }
+        else
+        {
+            Debug.Log("Fin de la cadena de decisiones. Volviendo al menú.");
+            GoToMenu();
+        }
+    }
+    
     private void GoToMenu()
     {
         SceneManager.LoadScene("Menu");
