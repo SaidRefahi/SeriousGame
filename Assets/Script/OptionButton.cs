@@ -48,11 +48,25 @@ public class OptionButton : MonoBehaviour
     private void OnButtonClick()
     {
         if (currentOption == null) return;
+        
+        // --- ¡LÍNEA NUEVA! ---
+        // Reproduce el sonido de clic ANTES de hacer nada más.
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayClickSound();
+        }
+        // ---------------------
 
         // 1. Otorga la ficha de conocimiento al jugador
-        PerspectiveJournal.Instance.AddFicha(currentOption.FichaToGrant);
+        if (PerspectiveJournal.Instance != null && currentOption.FichaToGrant != null)
+        {
+            PerspectiveJournal.Instance.AddFicha(currentOption.FichaToGrant);
+        }
 
         // 2. Notifica al DecisionManager que se ha tomado una decisión
-        decisionManager.OnOptionSelected(currentOption);
+        if (decisionManager != null)
+        {
+            decisionManager.OnOptionSelected(currentOption);
+        }
     }
 }
