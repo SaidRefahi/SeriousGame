@@ -19,5 +19,5 @@ MonoBehaviour:
     todo el monto. Te sientes inteligente, como si hubieras vencido al sistema. Dispones
     del dinero de forma inmediata y sin descuentos. Sin embargo, no puedes justificar
     tus ingresos, lo que te impide acceder a un alquiler, un cr\xE9dito o demostrar
-    solvencia. Vives con el riesgo constante de que la AFIP detecte tus movimientos."
+    solvencia. Vives con el riesgo constante de que el ARCA detecte tus movimientos."
   FichaToGrant: {fileID: 11400000, guid: b590d48c7cc72894f89ea5437c4e1312, type: 2}

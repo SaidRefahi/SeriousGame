@@ -20,5 +20,6 @@ MonoBehaviour:
     el libro que necesita solo puede consultarse en sala. Pasas horas en una silla
     inc\xF3moda tomando notas a mano. No gastas un peso, pero el costo log\xEDstico
     y de tiempo es alt\xEDsimo. El estr\xE9s y la ineficiencia te dejan igual de
-    agotada, pero sin resolver el problema de ra\xEDz (sigues sin cargador)."
+    agotada, pero sin resolver el problema de ra\xEDz (sigues sin cargador y sin
+    poder usar el software)."
   FichaToGrant: {fileID: 11400000, guid: 3ee296f5bbc915c43ac17641d59a2cf7, type: 2}
